@@ -1,0 +1,1364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!-- Font Awesome CDN Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Slick Slider -->
+    <link rel="stylesheet" href="./assets/css/slick.css">
+    <!-- Bootstrap CDN Link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Main CSS File -->
+    <link rel="stylesheet" href="./assets/css/locationModal.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+    <title>Food Site</title>
+</head>
+<body>
+    <!-- Header Section -->
+    <section class="header-all-section">
+        <!-- Top Header For Food Website -->
+        <section class="top-header-section header-large-device">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-3 col-sm-6 col-md-6">
+                        <div class="topheader-social-icon">
+                            <ul>
+                                <li><a href="#"><span><i class="fa-brands fa-facebook-f"></i></span></a></li>
+                                <li><a href="#"><span><i class="fa-brands fa-twitter"></i></span></a></li>    
+                                <li><a href="#"><span><i class="fa-brands fa-linkedin-in"></i></span></a></li>
+                                <li><a href="#"><span><i class="fa-brands fa-instagram"></i></span></a></li>    
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-9 col-sm-6 col-md-6">
+                        <div class="top-header-links">
+                            <ul>
+                                <li>
+                                    <p class="topheader-shoplocation me-2">Shop:</p>
+                                </li>
+                                <li>
+                                    <div class="top-header-shop-location">
+                                        <select name="shop" id="shop" class="form-control form-control-sm">
+                                            <option value="">Select Shop</option>
+                                                <option value="1">Dhaka</option>
+                                                <option value="2">Khulna</option>
+                                                <option value="3">Cox's Bazar</option>
+                                        </select>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Header For Food Website Large Device-->
+        <section class="header-section header-large-device">
+            <div class="container">
+                <div class="" id="headerLarge">
+                    <nav class="navbar navbar-expand-lg">
+                        <div class="container-fluid">
+                            <a class="navbar-brand header-logo" href="/">
+                                <img src="/assets/images/self-logo.png" alt="Logo">
+                            </a>
+                            <div class="collapse navbar-collapse">
+                                <ul class="navbar-nav header-navbar-nav m-auto mb-2 mb-lg-0">
+                                    <li class="nav-item">
+                                        <a class="nav-link header-navlink" aria-current="page" href="/">Home</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link header-navlink" href="/menu">Order Now</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link header-navlink" href="/contact-us">Contact Us</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- Account Button -->
+                            <!-- <div class="header-button">
+                                <div class="dropdown">
+                                    <button class="btn mainbtn-primary account-btn dropdown-toggle" type="button"
+                                            data-bs-toggle="dropdown" aria-expanded="false">
+                                        <span><i class="fa-solid fa-user"></i></span>Account
+                                    </button>
+                                    <ul class="dropdown-menu accountbtn-dropdown-menu">
+                                        <li><a class="dropdown-item account-btn-item" href="/profile/details"><span><i
+                                                        class="fa-solid fa-user"></i></span>My Account</a></li>
+                                        <li><a class="dropdown-item account-btn-item" href="/profile/order"><span><i
+                                                        class="fa-solid fa-box"></i></span>My Order</a></li>
+                                        <li><a class="dropdown-item account-btn-item" data-bs-toggle="modal"
+                                               data-bs-target="#logoutModal" href="#"><span><i
+                                                        class="fa-solid fa-right-from-bracket"></i></span>Logout</a></li>
+                                    </ul>
+                                </div>
+                            </div> -->
+                            <div class="header-button">
+                                <a href="/login" class="btn mainbtn-primary login-btn">Login</a>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </section>
+        <!-- Header For Food Website Mobile Device Logo and Login Panel-->
+        <section class="mobile-header-section header-mobile-device">
+            <div class="mobile-header">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-7">
+                            <div class="mobileheader-logo">
+                                <a href="/"><img src="/assets/images/self-logo.png" alt="Logo"></a>
+                            </div>
+                        </div>
+                        <div class="col-5">
+                            <!-- Account Button -->
+                            <!-- <div class="mobileheader-button">
+                                <div class="dropdown">
+                                    <button class="btn mainbtn-primary account-btn mobileaccount-btn dropdown-toggle"
+                                            type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        <span><i class="fa-solid fa-user"></i></span>
+                                    </button>
+                                    <ul class="dropdown-menu accountbtn-dropdown-menu mobileaccountbtn-dropdown-menu">
+                                        <li><a class="dropdown-item account-btn-item" href="/profile/details"><span><i
+                                                        class="fa-solid fa-user"></i></span>My Account</a></li>
+                                        <li><a class="dropdown-item account-btn-item" href="/profile/order"><span><i
+                                                        class="fa-solid fa-box"></i></span>My Order</a></li>
+                                        <li><a class="dropdown-item account-btn-item" data-bs-toggle="modal"
+                                               data-bs-target="#logoutModal" href="#"><span><i
+                                                        class="fa-solid fa-right-from-bracket"></i></span>Logout</a></li>
+                                    </ul>
+                                </div>
+                            </div> -->
+                            <div class="mobileheader-button">
+                                <a href="/login" class="btn mainbtn-primary login-btn">Login</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Header For Food Website Mobile Device Menu and Location Button Panel-->
+        <section class="mobile-header-section mobile-header-navsection header-mobile-device">
+            <div class="mobile-header-menu">
+                <div class="container">
+                    <div class="mobile-header-option">
+                        <nav class="navbar navbar-expand-lg">
+                            <div class="">
+                                <button class="navbar-toggler mobile-navbar-toggler" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                                        aria-expanded="false" aria-label="Toggle navigation">
+                                    <span class="navbar-toggler-icon"></span>
+                                </button>
+                                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                    <ul class="navbar-nav mobileheader-navbar-nav m-auto mb-2 mb-lg-0">
+                                        <li class="nav-item">
+                                            <a class="nav-link mobileheader-navlink active" aria-current="page" href="/"><span><i class="fa-solid fa-angles-right"></i></span> Home</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link mobileheader-navlink" href="/menu"><span><i class="fa-solid fa-angles-right"></i></span> Order Now</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link mobileheader-navlink" href="#"><span><i class="fa-solid fa-angles-right"></i></span> Download Menu</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link mobileheader-navlink" href="/contact-us"><span><i class="fa-solid fa-angles-right"></i></span> Contact Us</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </nav>
+                        <div class="mobileheader-arrow-button btn mobileheader-collapse-btn" id="btn-collapse" data-bs-toggle="collapse" href="#LocationCollapse" role="button" aria-expanded="false" aria-controls="collapseExample">
+                                <p><span><i class="fa-solid fa-location-dot"></i></span> Dhaka</p>
+                            <div class="mobileheader-arrowbutton-hold">
+                                <p>
+                                    <span id="headerDownArrowIcon"><i class="fa-solid fa-angle-down"></i></span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="collapse headerlocation-collapse" id="LocationCollapse">
+                <div class="container">
+                    <div class="headerlocation-collapse-allcontent">
+                        <div class="headerlocation-collapse-title">
+                            <h4>Restaurant Food Dhaka</h4>
+                        </div>
+                        <div class="headerlocation-collapse-address">
+                            <p><span><a href="#" target="_blank">House #1, Block-A, Road-1, Malibagh, Dhaka</a></p>
+                        </div>
+                        <div class="headerlocation-collapse-address">
+                            <p><span><a href="#">info_restaurant@email.com</a></p>
+                        </div>
+                        <div class="headerlocation-collapse-address headerlocation-collapse-phone">
+                            <p><span><a href="#">+88 0123 456789</a></p>
+                        </div>
+                        <div class="headerlocation-collapse-openingtime">
+                            <h5><span><i class="fa-solid fa-clock"></i></span>Opening Times Today</h5>
+                            <div class="d-flex align-items-center justify-content-between">
+                                <div class="headerlocation-timing-title">
+                                    <h6>Opening Times</h6>
+                                </div>
+                                <div>
+                                    <p>09:30 - 19:00</p>
+                                </div>
+                            </div>
+                            <div class="d-flex align-items-center justify-content-between">
+                                <div class="headerlocation-timing-title">
+                                    <h6>Tomorrow</h6>
+                                </div>
+                                <div>
+                                    <p>09:30 - 18:00</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hlc-change-button">
+                            <a href="#" type="button" data-bs-toggle="modal" data-bs-target="#shopModal" class="ms-2 btn mainbtn-primary login-btn hlc-change-btn">Change Shop</a>    
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+    <!-- Banner Section -->
+    <section class="banner-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <div class="banner-content">
+                        <div class="banner-heading">
+                            <h1>Food Indian & Balti</h1>
+                            <h3>Restaurant and Take away</h3>
+                        </div>
+                        <div class="banner-details">
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-11 col-lg-10">
+                                <div class="banner-searchbutton">
+                                    <input type="text" class="form-control banner-s-field" placeholder="Search Here...">
+                                    <button class="btn search-button">
+                                        <i class="fa-solid fa-magnifying-glass"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="banner-image">
+                        <img src="/assets/images/foodbanner.jpg" alt="">
+                    <div class="banner-overlay"></div>
+                    <div class="banner-image-title">
+                        <h1>Savor Healthy Eats - keep it casual and easy-going</h1>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Service Section -->
+    <section class="service-section">
+        <div class="container">
+            <div class="row align-items-start">
+                <div class="col-md-3">
+                    <div class="service-item">
+                        <div class="service-icon">
+                            <span><img src="/assets/images/service-icon/fast-delivery.svg" alt=""></span>
+                        </div>
+                        <div class="service-title">
+                            <h4>Fast Delivery</h4>
+                        </div>
+                        <p>Lorem Ipsum is simply dummy text of the printing.</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="service-item">
+                        <div class="service-icon">
+                            <span><img src="/assets/images/service-icon/fresh-food.svg" alt=""></span>
+                        </div>
+                        <div class="service-title">
+                            <h4>Fresh Food</h4>
+                        </div>
+                        <p>Lorem Ipsum is simply dummy text of the printing.</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="service-item">
+                        <div class="service-icon">
+                            <span><img src="/assets/images/service-icon/experience-chefs.svg" alt=""></span>
+                        </div>
+                        <div class="service-title">
+                            <h4>Experienced Chefs</h4>
+                        </div>
+                        <p>Lorem Ipsum is simply dummy text of the printing.</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="service-item">
+                        <div class="service-icon">
+                            <span><img src="/assets/images/service-icon/dishes.svg" alt=""></span>
+                        </div>
+                        <div class="service-title">
+                            <h4>A Variety of Dishes</h4>
+                        </div>
+                        <p>Lorem Ipsum is simply dummy text of the printing.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- About Section -->
+    <section class="about-section" id="aboutUs">
+        <div class="about-overlay"></div>
+        <div class="container">
+            <div class="about-content-details">
+                <div class="row align-items-center">
+                    <div class="col-md-5">
+                        <div class="about-content">
+                            <h5>History</h5>
+                            <h1>About Us</h1>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, iusto veniam. Vitae ex
+                                eligendi aut doloremque saepe facilis nulla voluptate veritatis ipsam! Sequi, enim ad.
+                                Cumque odit veniam totam voluptates. Lorem ipsum dolor sit amet consectetur adipisicing
+                                elit. Adipisci, iusto veniam.</p>
+                            <div class="about-section-button">
+                                <a href="/about-us" class="btn mainbtn-primary">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-7">
+                        <div class="about-image">
+                            <img src="/assets/images/about.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Product Offer Section -->
+    <section class="product-offer-section">
+        <div class="offer-product-overlay"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="offerproduct-slider-hold">
+                        <div class="offerproduct-slider">
+                            <div>
+                                <div class="row align-items-center">
+                                    <div class="col-md-6">
+                                        <div class="offer-product-imagecontent">
+                                            <div class="offer-product-image">
+                                                <img src="/assets/images/offer-product/op-img1.png" alt="">
+                                            </div>
+                                            <div class="discount-amount">
+                                                <div class="discount-circle">
+                                                    <p>15%</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="offer-product-content">
+                                            <div class="op-content-title">
+                                                <h3>Limited Discount</h3>
+                                            </div>
+                                            <div class="op-discount-code">
+                                                <p>Use Code: <span>Happy50</span></p>
+                                            </div>
+                                            <p>Free Shipping/ Online Offer</p>
+                                            <div class="op-button">
+                                                <a href="/menu" class="btn mainbtn-primary op-btn">Order Now</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="row align-items-center">
+                                    <div class="col-md-6">
+                                        <div class="offer-product-imagecontent">
+                                            <div class="offer-product-image">
+                                                <img src="/assets/images/offer-product/op-img2.png" alt="">
+                                            </div>
+                                            <div class="discount-amount">
+                                                <div class="discount-circle">
+                                                    <p>20%</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="offer-product-content">
+                                            <div class="op-content-title">
+                                                <h3>Limited Discount</h3>
+                                            </div>
+                                            <div class="op-discount-code">
+                                                <p>Use Code: <span>Happy150</span></p>
+                                            </div>
+                                            <p>Free Shipping/ Online Offer</p>
+                                            <div class="op-button">
+                                                <a href="#" class="btn mainbtn-primary op-btn">Order Now</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="row align-items-center">
+                                    <div class="col-md-6">
+                                        <div class="offer-product-imagecontent">
+                                            <div class="offer-product-image">
+                                                <img src="/assets/images/offer-product/op-img3.png" alt="">
+                                            </div>
+                                            <div class="discount-amount">
+                                                <div class="discount-circle">
+                                                    <p>35%</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="offer-product-content">
+                                            <div class="op-content-title">
+                                                <h3>Limited Discount</h3>
+                                            </div>
+                                            <div class="op-discount-code">
+                                                <p>Use Code: <span>Happy20</span></p>
+                                            </div>
+                                            <p>Free Shipping/ Online Offer</p>
+                                            <div class="op-button">
+                                                <a href="#" class="btn mainbtn-primary op-btn">Order Now</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Work Section -->
+    <section class="works-section">
+        <div class="works-overlay"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-9 m-auto">
+                    <div class="featured-heading works-heading">
+                        <div class="featured-heading-title works-heading-title">
+                            <h1>An Explanation of How it works</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="works-explanation-items">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="work-e-item">
+                            <div class="work-image-control">
+                                <div class="work-image">
+                                    <img src="/assets/images/works/w-img1.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="work-e-content">
+                                <h5>Pick Your Meal</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="work-e-item">
+                            <div class="work-image-control">
+                                <div class="work-image">
+                                    <img src="/assets/images/works/w-img2.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="work-e-content">
+                                <h5>Delivered to your door</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="work-e-item">
+                            <div class="work-image-control">
+                                <div class="work-image">
+                                    <img src="/assets/images/works/w-img3.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="work-e-content">
+                                <h5>Prepare & Enjoy</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Food of the Week Section -->
+    <section class="food-week-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-9 m-auto">
+                    <div class="featured-heading">
+                        <div class="featured-heading-title">
+                            <h1>Food of the week</h1>
+                        </div>
+                        <div class="featured-heading-content">
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                                has been the industry's standard dummy text ever since the 1500s, when an unknown
+                                printer took a galley of type and scrambled it to make a type specimen book.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="foodweek-all-content">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="offerproduct-slider-hold">
+                            <div class="foodweek-slider">
+                                <div>
+                                    <div class="food-week-item">
+                                        <div class="featured-item-image food-week-image">
+                                            <a href="#">
+                                                <img src="/assets/images/foodimages/6.jpg" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="featured-content food-week-content">
+                                            <div class="fc-title fw-title">
+                                                <h3>Chicken Fry</h3>
+                                            </div>
+                                            <div class="food-week-rating">
+                                                <span><i class="fa-solid fa-star"></i></span>
+                                                <span><i class="fa-solid fa-star"></i></span>
+                                                <span><i class="fa-solid fa-star"></i></span>
+                                                <span class="nonactive"><i class="fa-solid fa-star"></i></span>
+                                                <span class="nonactive"><i class="fa-solid fa-star"></i></span>
+                                                <span class="reviews-count">(2 Reviews)</span>
+                                            </div>
+                                            <div class="food-week-footer">
+                                                <div class="food-week-price">
+                                                    <p>£ 3.30</p>
+                                                </div>
+                                                <div class="offer-product-button">
+                                                    <a href="/menu" class="btn mainbtn-primary fw-btn">Order Now</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="food-week-item">
+                                        <div class="featured-item-image food-week-image">
+                                            <a href="#">
+                                                <img src="/assets/images/foodimages/2.jpg" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="featured-content food-week-content">
+                                            <div class="fc-title fw-title">
+                                                <h3>Chicken Fry</h3>
+                                            </div>
+                                            <div class="food-week-rating">
+                                                <span><i class="fa-solid fa-star"></i></span>
+                                                <span><i class="fa-solid fa-star"></i></span>
+                                                <span><i class="fa-solid fa-star"></i></span>
+                                                <span class="nonactive"><i class="fa-solid fa-star"></i></span>
+                                                <span class="nonactive"><i class="fa-solid fa-star"></i></span>
+                                                <span class="reviews-count">(2 Reviews)</span>
+                                            </div>
+                                            <div class="food-week-footer">
+                                                <div class="food-week-price">
+                                                    <p>£ 3.30</p>
+                                                </div>
+                                                <div class="offer-product-button">
+                                                    <a href="/menu" class="btn mainbtn-primary fw-btn">Order Now</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="food-week-item">
+                                        <div class="featured-item-image food-week-image">
+                                            <a href="#">
+                                                <img src="/assets/images/foodimages/3.jpg" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="featured-content food-week-content">
+                                            <div class="fc-title fw-title">
+                                                <h3>Chicken Fry</h3>
+                                            </div>
+                                            <div class="food-week-rating">
+                                                <span><i class="fa-solid fa-star"></i></span>
+                                                <span><i class="fa-solid fa-star"></i></span>
+                                                <span><i class="fa-solid fa-star"></i></span>
+                                                <span class="nonactive"><i class="fa-solid fa-star"></i></span>
+                                                <span class="nonactive"><i class="fa-solid fa-star"></i></span>
+                                                <span class="reviews-count">(2 Reviews)</span>
+                                            </div>
+                                            <div class="food-week-footer">
+                                                <div class="food-week-price">
+                                                    <p>£ 3.30</p>
+                                                </div>
+                                                <div class="offer-product-button">
+                                                    <a href="/menu" class="btn mainbtn-primary fw-btn">Order Now</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="food-week-item">
+                                        <div class="featured-item-image food-week-image">
+                                            <a href="#">
+                                                <img src="/assets/images/foodimages/4.jpg" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="featured-content food-week-content">
+                                            <div class="fc-title fw-title">
+                                                <h3>Chicken Fry</h3>
+                                            </div>
+                                            <div class="food-week-rating">
+                                                <span><i class="fa-solid fa-star"></i></span>
+                                                <span><i class="fa-solid fa-star"></i></span>
+                                                <span><i class="fa-solid fa-star"></i></span>
+                                                <span class="nonactive"><i class="fa-solid fa-star"></i></span>
+                                                <span class="nonactive"><i class="fa-solid fa-star"></i></span>
+                                                <span class="reviews-count">(2 Reviews)</span>
+                                            </div>
+                                            <div class="food-week-footer">
+                                                <div class="food-week-price">
+                                                    <p>£ 3.30</p>
+                                                </div>
+                                                <div class="offer-product-button">
+                                                    <a href="/menu" class="btn mainbtn-primary fw-btn">Order Now</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="food-week-item">
+                                        <div class="featured-item-image food-week-image">
+                                            <a href="#">
+                                                <img src="/assets/images/foodimages/5.jpg" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="featured-content food-week-content">
+                                            <div class="fc-title fw-title">
+                                                <h3>Chicken Fry</h3>
+                                            </div>
+                                            <div class="food-week-rating">
+                                                <span><i class="fa-solid fa-star"></i></span>
+                                                <span><i class="fa-solid fa-star"></i></span>
+                                                <span><i class="fa-solid fa-star"></i></span>
+                                                <span class="nonactive"><i class="fa-solid fa-star"></i></span>
+                                                <span class="nonactive"><i class="fa-solid fa-star"></i></span>
+                                                <span class="reviews-count">(2 Reviews)</span>
+                                            </div>
+                                            <div class="food-week-footer">
+                                                <div class="food-week-price">
+                                                    <p>£ 3.30</p>
+                                                </div>
+                                                <div class="offer-product-button">
+                                                    <a href="/menu" class="btn mainbtn-primary fw-btn">Order Now</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Client Reviews Section -->
+    <section class="client-review-section product-offer-section">
+        <div class="offer-product-overlay"></div>
+        <div class="client-review-allcontent">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-9 m-auto">
+                        <div class="featured-heading">
+                            <div class="featured-heading-title">
+                                <h1>Our Happy Client</h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="client-review-all-slider">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="client-review-slider">
+                                <div>
+                                    <div class="client-review-item">
+                                        <div class="client-review-itemborder"></div>
+                                        <div class="quote-circle quote-circle1">
+                                            <div class="quote-circle-hold">
+                                                <span><i class="fa-solid fa-quote-left"></i></span>
+                                            </div>
+                                        </div>
+                                        <div class="quote-circle quote-circle2">
+                                            <div class="quote-circle-hold">
+                                                <span><i class="fa-solid fa-quote-right"></i></span>
+                                            </div>
+                                        </div>
+                                        <div class="cr-all-content">
+                                            <div class="client-review-rating">
+                                                <span class="review-rating client-active-rating"><i
+                                                        class="fa-solid fa-star"></i></span>
+                                                <span class="review-rating client-active-rating"><i
+                                                        class="fa-solid fa-star"></i></span>
+                                                <span class="review-rating client-active-rating"><i
+                                                        class="fa-solid fa-star"></i></span>
+                                                <span class="review-rating "><i class="fa-solid fa-star"></i></span>
+                                                <span class="review-rating "><i class="fa-solid fa-star"></i></span>
+                                            </div>
+                                            <div class="client-review-content">
+                                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat
+                                                    porro nesciunt incidunt, cumque nulla eligendi exercitationem odio
+                                                    quibusdam eveniet asperiores.</p>
+                                            </div>
+                                            <div class="review-clientname">
+                                                <h6><span>-</span> Autelius Valerius</h6>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="client-review-item">
+                                        <div class="client-review-itemborder"></div>
+                                        <div class="quote-circle quote-circle1">
+                                            <div class="quote-circle-hold">
+                                                <span><i class="fa-solid fa-quote-left"></i></span>
+                                            </div>
+                                        </div>
+                                        <div class="quote-circle quote-circle2">
+                                            <div class="quote-circle-hold">
+                                                <span><i class="fa-solid fa-quote-right"></i></span>
+                                            </div>
+                                        </div>
+                                        <div class="cr-all-content">
+                                            <div class="client-review-rating">
+                                                <span class="review-rating client-active-rating"><i
+                                                        class="fa-solid fa-star"></i></span>
+                                                <span class="review-rating client-active-rating"><i
+                                                        class="fa-solid fa-star"></i></span>
+                                                <span class="review-rating client-active-rating"><i
+                                                        class="fa-solid fa-star"></i></span>
+                                                <span class="review-rating "><i class="fa-solid fa-star"></i></span>
+                                                <span class="review-rating "><i class="fa-solid fa-star"></i></span>
+                                            </div>
+                                            <div class="client-review-content">
+                                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat
+                                                    porro nesciunt incidunt, cumque nulla eligendi exercitationem odio
+                                                    quibusdam eveniet asperiores.</p>
+                                            </div>
+                                            <div class="review-clientname">
+                                                <h6><span>-</span> Autelius Valerius</h6>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="client-review-item">
+                                        <div class="client-review-itemborder"></div>
+                                        <div class="quote-circle quote-circle1">
+                                            <div class="quote-circle-hold">
+                                                <span><i class="fa-solid fa-quote-left"></i></span>
+                                            </div>
+                                        </div>
+                                        <div class="quote-circle quote-circle2">
+                                            <div class="quote-circle-hold">
+                                                <span><i class="fa-solid fa-quote-right"></i></span>
+                                            </div>
+                                        </div>
+                                        <div class="cr-all-content">
+                                            <div class="client-review-rating">
+                                                <span class="review-rating client-active-rating"><i
+                                                        class="fa-solid fa-star"></i></span>
+                                                <span class="review-rating client-active-rating"><i
+                                                        class="fa-solid fa-star"></i></span>
+                                                <span class="review-rating client-active-rating"><i
+                                                        class="fa-solid fa-star"></i></span>
+                                                <span class="review-rating "><i class="fa-solid fa-star"></i></span>
+                                                <span class="review-rating "><i class="fa-solid fa-star"></i></span>
+                                            </div>
+                                            <div class="client-review-content">
+                                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat
+                                                    porro nesciunt incidunt, cumque nulla eligendi exercitationem odio
+                                                    quibusdam eveniet asperiores.</p>
+                                            </div>
+                                            <div class="review-clientname">
+                                                <h6><span>-</span> Autelius Valerius</h6>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="client-review-item">
+                                        <div class="client-review-itemborder"></div>
+                                        <div class="quote-circle quote-circle1">
+                                            <div class="quote-circle-hold">
+                                                <span><i class="fa-solid fa-quote-left"></i></span>
+                                            </div>
+                                        </div>
+                                        <div class="quote-circle quote-circle2">
+                                            <div class="quote-circle-hold">
+                                                <span><i class="fa-solid fa-quote-right"></i></span>
+                                            </div>
+                                        </div>
+                                        <div class="cr-all-content">
+                                            <div class="client-review-rating">
+                                                <span class="review-rating client-active-rating"><i
+                                                        class="fa-solid fa-star"></i></span>
+                                                <span class="review-rating client-active-rating"><i
+                                                        class="fa-solid fa-star"></i></span>
+                                                <span class="review-rating client-active-rating"><i
+                                                        class="fa-solid fa-star"></i></span>
+                                                <span class="review-rating "><i class="fa-solid fa-star"></i></span>
+                                                <span class="review-rating "><i class="fa-solid fa-star"></i></span>
+                                            </div>
+                                            <div class="client-review-content">
+                                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat
+                                                    porro nesciunt incidunt, cumque nulla eligendi exercitationem odio
+                                                    quibusdam eveniet asperiores.</p>
+                                            </div>
+                                            <div class="review-clientname">
+                                                <h6><span>-</span> Autelius Valerius</h6>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Food Image Section -->
+    <section class="food-image-section">
+        <div class="food-all-image">
+            <div class="food-image">
+                <img src="/assets/images/foodimages/1.jpg" alt="">
+            </div>
+            <div class="food-image">
+                <img src="/assets/images/foodimages/2.jpg" alt="">
+            </div>
+            <div class="food-image">
+                <img src="/assets/images/foodimages/3.jpg" alt="">
+            </div>
+            <div class="food-image">
+                <img src="/assets/images/foodimages/4.jpg" alt="">
+            </div>
+            <div class="food-image">
+                <img src="/assets/images/foodimages/5.jpg" alt="">
+            </div>
+            <div class="food-image">
+                <img src="/assets/images/foodimages/6.jpg" alt="">
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Footer Section -->
+    <section class="all-footer-section">
+        <!-- Footer Upper section -->
+        <section class="footer-section" id="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-5">
+                        <div class="footer-logo">
+                            <img src="/assets/images/self-logo.png" alt="">
+                        </div>
+                        <div class="footer-details">
+                            <div class="footer-opening-time">
+                                <h5>Opening Times</h5>
+                                <p>Everyday : <span>10:00AM - 11:00PM</span></p>
+                            </div>
+                            <div class="footer-all-contactifo footer-large-device">
+                                <div class="footer-contact-info">
+                                    <div class="contact-icon">
+                                        <span><i class="fa-solid fa-phone"></i></span>
+                                    </div>
+                                    <div class="contact-details">
+                                        <a href="#">+880 1234 567890</a>
+                                    </div>
+                                </div>
+                                <div class="footer-contact-info">
+                                    <div class="contact-icon">
+                                        <span><i class="fa-solid fa-envelope"></i></span>
+                                    </div>
+                                    <div class="contact-details">
+                                        <a href="#">info_restaurant@email.com</a>
+                                    </div>
+                                </div>
+                                <div class="footer-contact-info">
+                                    <div class="contact-icon">
+                                        <span><i class="fa-solid fa-location-dot"></i></span>
+                                    </div>
+                                    <div class="contact-details">
+                                        <a href="#" target="_blank">House #1, Block - A, Road #1, Malibagh, Dhaka.</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="footer-contactifo-accordion footer-mobile-device">
+                                <div class="accordion" id="footerContactInfo">
+                                    <div class="accordion-item footer-accordion-item">
+                                        <h2 class="accordion-header">
+                                            <button class="accordion-button footer-accordion-button collapsed" type="button"
+                                                    data-bs-toggle="collapse" data-bs-target="#footerContactLink"
+                                                    aria-expanded="true" aria-controls="footerContactLink">
+                                                Our Contact Information
+                                            </button>
+                                        </h2>
+                                        <div id="footerContactLink" class="accordion-collapse collapse"
+                                             data-bs-parent="#footerContactInfo">
+                                            <div class="accordion-body footer-accordion-body">
+                                                <div>
+                                                    <div class="footer-contact-info">
+                                                        <div class="contact-icon">
+                                                            <span><i class="fa-solid fa-phone"></i></span>
+                                                        </div>
+                                                        <div class="contact-details mobile-contact-details">
+                                                            <a href="#">+880 1234 567890</a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="footer-contact-info">
+                                                        <div class="contact-icon">
+                                                            <span><i class="fa-solid fa-envelope"></i></span>
+                                                        </div>
+                                                        <div class="contact-details mobile-contact-details">
+                                                            <a href="#">info_restaurant@email.com</a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="footer-contact-info">
+                                                        <div class="contact-icon">
+                                                            <span><i class="fa-solid fa-location-dot"></i></span>
+                                                        </div>
+                                                        <div class="contact-details mobile-contact-details">
+                                                            <a href="#" target="_blank">House #1, Block - A, Road #1, Malibagh, Dhaka.</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="footer-large-device">
+                            <div class="footer-links-title">
+                                <h3>Useful Links</h3>
+                            </div>
+                            <div class="footer-useful-link">
+                                <ul>
+                                    <li>
+                                        <div class="footer-link-icon">
+                                            <span><i class="fa-solid fa-caret-right"></i></span>
+                                        </div>
+                                        <div class="footer-link-content">
+                                            <a href="/about-us">About Us</a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="footer-link-icon">
+                                            <span><i class="fa-solid fa-caret-right"></i></span>
+                                        </div>
+                                        <div class="footer-link-content">
+                                            <a href="/contact-us">Contact Us</a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="footer-link-icon">
+                                            <span><i class="fa-solid fa-caret-right"></i></span>
+                                        </div>
+                                        <div class="footer-link-content">
+                                            <a href="#">Download Menu</a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="footer-link-icon">
+                                            <span><i class="fa-solid fa-caret-right"></i></span>
+                                        </div>
+                                        <div class="footer-link-content">
+                                            <a href="/menu">Order Now</a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="footer-mobile-device mt-3">
+                            <div class="accordion" id="accordionUsefulLink">
+                                <div class="accordion-item footer-accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button footer-accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#usefulLinks" aria-expanded="true"
+                                                aria-controls="usefulLinks">
+                                            Useful Links
+                                        </button>
+                                    </h2>
+                                    <div id="usefulLinks" class="accordion-collapse collapse"
+                                         data-bs-parent="#accordionUsefulLink">
+                                        <div class="accordion-body footer-accordion-body">
+                                            <div class="footer-useful-link mobilefooter-useful-link">
+                                                <ul>
+                                                    <li>
+                                                        <div class="footer-link-icon mobilefooter-link-icon">
+                                                            <span><i class="fa-solid fa-caret-right"></i></span>
+                                                        </div>
+                                                        <div class="footer-link-content mobilefooter-link-content">
+                                                            <a href="/about-us">About Us</a>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="footer-link-icon mobilefooter-link-icon">
+                                                            <span><i class="fa-solid fa-caret-right"></i></span>
+                                                        </div>
+                                                        <div class="footer-link-content mobilefooter-link-content">
+                                                            <a href="/contact-us">Contact Us</a>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="footer-link-icon mobilefooter-link-icon">
+                                                            <span><i class="fa-solid fa-caret-right"></i></span>
+                                                        </div>
+                                                        <div class="footer-link-content mobilefooter-link-content">
+                                                            <a href="">Download Menu</a>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="footer-link-icon mobilefooter-link-icon">
+                                                            <span><i class="fa-solid fa-caret-right"></i></span>
+                                                        </div>
+                                                        <div class="footer-link-content mobilefooter-link-content">
+                                                            <a href="/menu">Order Now</a>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="footer-links-title">
+                                <h3>Follow Us</h3>
+                            </div>
+                            <div class="footer-social-link">
+                                <ul>
+                                    <li>
+                                        <a href="#"><span><i class="fa-brands fa-facebook-f"></i></span></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><span><i class="fa-brands fa-twitter"></i></span></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><span><i class="fa-brands fa-linkedin-in"></i></span></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><span><i class="fa-brands fa-instagram"></i></span></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="footer-contactform">
+                            <div class="subscribe-title">
+                                <p>Subscribe to Our Newsletter</p>
+                            </div>
+                            <form>
+                                <div class="mb-3">
+                                    <input type="email" class="form-control footer-formcontrol" placeholder="Email Address" required>
+                                </div>
+                                <button type="submit" class="btn footer-formbtn">Subscribe</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-learnmore-links">
+                    <div class="footer-large-device">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="row">
+                                    <div class="col-md-12 m-auto">
+                                        <div class="separator"></div>
+                                    </div>
+                                </div>
+                                <div class="row align-items-center">
+                                    <div class="col-md-6 col-lg-7 m-auto">
+                                        <div class="learn-more-link">
+                                            <ul>
+                                                <li><a href="#">Terms & Conditions</a></li>
+                                                <li><a href="#">FAQs</a></li>
+                                                <li><a href="#">Privacy Policy</a></li>
+                                                <li><a href="#">Refund Policy</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12 m-auto">
+                                        <div class="separator"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer-mobile-device">
+                        <div class="row">
+                            <div class="col-12">
+                                <h6 class="footerlearn-more-title">Lean More</h6>
+                            </div>
+                            <div class="col-6 m-auto">
+                                <div class="footermobile-learnmore-links">
+                                    <a href="#" class="btn fm-lm-linkbtn">Terms & Conditions</a>
+                                </div>
+                            </div>
+                            <div class="col-6 m-auto">
+                                <div class="footermobile-learnmore-links">
+                                    <a href="#" class="btn fm-lm-linkbtn">FAQs</a>
+                                </div>
+                            </div>
+                            <div class="col-6 m-auto">
+                                <div class="footermobile-learnmore-links">
+                                    <a href="#" class="btn fm-lm-linkbtn">Privacy Policy</a>
+                                </div>
+                            </div>
+                            <div class="col-6 m-auto">
+                                <div class="footermobile-learnmore-links">
+                                    <a href="#" class="btn fm-lm-linkbtn">Refund Policy</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Footer Bottom Section -->
+        <section class="footer-bottom-section">
+            <div class="container">
+                <div class="row align-items-center mobile-footerbottom-row">
+                    <div class="col-md-5 col-lg-5">
+                        <div class="footer-copyright">
+                            <p><span><i class="fa-regular fa-copyright"></i></span>Copyright <a href="https://abukaiser.com/" target="_blank">Abu Kaiser</a>. All right Reserved 2023.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-7 col-lg-7">
+                        <div class="payment-option">
+                            <div class="payment">
+                                <div class="payment-with d-flex align-items-center">
+                                    <span><i class="fa-solid fa-lock"></i></span>
+                                    <p>Pay Securely with</p>
+                                </div>
+                            </div>
+                            <div class="payment-method">
+                                <div class="payment">
+                                    <div class="payment-method-logo">
+                                        <img src="/assets/images/payment-logo/visa.jpg" alt=""/>
+                                    </div>
+                                </div>
+                                <div class="payment">
+                                    <div class="payment-method-logo">
+                                        <img src="/assets/images/payment-logo/mastercard.jpg" alt=""/>
+                                    </div>
+                                </div>
+                                <div class="payment">
+                                    <div class="payment-method-logo">
+                                        <img src="/assets/images/payment-logo/Amex.jpg" alt=""/>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+
+    <!-- Location Modal -->
+    <div class="modal fade" id="shopModal" tabindex="-1" aria-labelledby="shopModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header location-modal-header">
+                    <h1 class="modal-title location-modal-title" id="locationModalLabel">Our Restaurant</h1>
+                </div>
+                <form>
+                    <div class="modal-body location-modal-body">
+                        <div class="location-body-content">
+                            <div class="row">
+                                <div class="col-12 col-md-7 m-auto">
+                                    <div class="location-modal-image">
+                                        <img src="/assets/images/about.jpg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row align-items-center mt-3">
+                                    <div class="col-12 col-md-5">
+                                            <label for="payment_type" class="location-formlabel"><span><i class="fa-solid fa-location-dot"></i></span>OrderLocation</label>
+                                    </div>
+                                <div class="col-12 col-md-7 m-auto">
+                                    <div class="col-alignment">
+                                        <select name="branch" id="branch" class="form-control location-form-select">
+                                            <option value="">Select Shop</option>
+                                            <option value="1">Dhaka</option>
+                                            <option value="2">Khulna</option>
+                                            <option value="3">Cox's Bazar</option>
+                                        </select>
+        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer location-modal-footer">
+                        <button type="button" class="btn btn-secondary location-modal-close" data-bs-dismiss="modal">Back</button>
+                        <button type="submit" class="btn mainbtn-primary location-modal-close">Change</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Javascript Links -->
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js"></script>
+    <script src="/assets/js/slick.min.js"></script>
+    <!-- Header JS -->
+    <script src="/assets/js/header.js"></script>
+    <!-- Offer Product Slider -->
+    <script>
+        $('.offerproduct-slider').slick({
+            dots: false,
+            arrows: true,
+            slidesToShow: 1,
+            autoplay: false,
+            autoplaySpeed: 2000,
+            slidesToScroll: 1,
+            prevArrow: '<div class="slick-prev offerslider-prev-btn"><i class="fas fa-chevron-left"></i></div>',
+            nextArrow: '<div class="slick-next offerslider-next-btn"><i class="fas fa-chevron-right"></i></div>',
+            // responsive: [
+            //     {
+            //         breakpoint: 992,
+            //         settings: {
+            //             slidesToShow: 3,
+            //             slidesToScroll: 1,
+            //         },
+            //     },
+            //     {
+            //         breakpoint: 768,
+            //         settings: {
+            //             slidesToShow: 2,
+            //             slidesToScroll: 1,
+            //         },
+            //     },
+            //     {
+            //         breakpoint: 600,
+            //         settings: {
+            //             arrows: true,
+            //             slidesToShow: 1,
+            //             slidesToScroll: 1
+            //         }
+            //     }
+            // ]
+        });
+        $('.foodweek-slider').slick({
+            dots: false,
+            arrows: true,
+            slidesToShow: 3,
+            autoplay: false,
+            autoplaySpeed: 2000,
+            slidesToScroll: 1,
+            prevArrow: '<div class="slick-prev offerslider-prev-btn"><i class="fas fa-chevron-left"></i></div>',
+            nextArrow: '<div class="slick-next offerslider-next-btn"><i class="fas fa-chevron-right"></i></div>',
+            responsive: [
+                {
+                    breakpoint: 1080,
+                    settings: {
+                        slidesToShow: 3,
+                        slidesToScroll: 1,
+                    },
+                },
+                {
+                    breakpoint: 992,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 1,
+                    },
+                },
+                {
+                    breakpoint: 768,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 1,
+                    },
+                },
+                {
+                    breakpoint: 600,
+                    settings: {
+                        arrows: true,
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                }
+            ]
+        });
+        $('.client-review-slider').slick({
+            dots: true,
+            arrows: true,
+            slidesToShow: 3,
+            autoplay: false,
+            autoplaySpeed: 2000,
+            slidesToScroll: 1,
+            prevArrow: '<div class="slick-prev offerslider-prev-btn reviewslider-prev-btn"><i class="fas fa-chevron-left"></i></div>',
+            nextArrow: '<div class="slick-next offerslider-next-btn reviewslider-next-btn"><i class="fas fa-chevron-right"></i></div>',
+            responsive: [
+                {
+                    breakpoint: 1080,
+                    settings: {
+                        slidesToShow: 3,
+                        slidesToScroll: 1,
+                    },
+                },
+                {
+                    breakpoint: 992,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 1,
+                    },
+                },
+                {
+                    breakpoint: 768,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                    },
+                },
+                {
+                    breakpoint: 600,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                }
+            ]
+        });
+    </script>
+    </script>
+</body>
+</html>

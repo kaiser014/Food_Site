@@ -1,0 +1,45 @@
+.location-modal-body {
+    background-image: url(../images/bg-white.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.location-modal-header {
+    justify-content: center;
+    padding: 10px;
+}
+.location-modal-image {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.location-modal-image img {
+    width: 100%;
+}
+.location-modal-title {
+    font-size: 22px;
+    text-align: center;
+    font-weight: 700;
+}
+.location-body-content {
+    padding: 10px 0;
+}
+.location-formlabel {
+    color: #181818;
+    font-size: 18px;
+    font-weight: 600;
+}
+.location-formlabel span {
+    color: #ff9900;
+    margin-right: 7px;
+}
+.location-form-select {
+    border: 1px solid #c5c5c5;
+}
+.location-form-select:focus {
+    border: 1px solid #ff9900;
+    box-shadow: none;
+}
+.location-modal-footer {
+    padding: 6px 12px;
+}
