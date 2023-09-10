@@ -25,3 +25,24 @@ $(".mobileheader-collapse-btn").click(function() {
         $(this).children('.mobileheader-arrowbutton-hold').find('svg').attr('data-icon', 'angle-up');
     }
 });
+
+// Fix position of Header
+$(window).scroll(function (e) {
+    var $el = $('.mobile-header-navsection');
+    var isPositionFixed = ($el.css('position') == 'fixed');
+    if ($(this).scrollTop() > 60 && !isPositionFixed) {
+        $el.css({
+            'position': 'fixed',
+            'top': '0px',
+            'left': '0px',
+            'right': '0px',
+            'margin-bottom': '0',
+            'border-radius': '0px',
+        });
+    }
+    if ($(this).scrollTop() < 60 && isPositionFixed) {
+        $el.css({
+            'position': 'static',
+        });
+    }
+});

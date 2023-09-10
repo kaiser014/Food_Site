@@ -1,0 +1,2747 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!-- Font Awesome CDN Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Slick Slider -->
+    <link rel="stylesheet" href="../css/slick.css">
+    <!-- Owl Carousal Link -->
+    <link rel="stylesheet" href="../css/owl.carousel.css">
+    <!-- Bootstrap CDN Link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Main CSS File -->
+    <link rel="stylesheet" href="../css/menu.css">
+    <link rel="stylesheet" href="../css/locationModal.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <title>Food Site</title>
+</head>
+<body>
+    <!-- Header Section -->
+    <section class="header-all-section">
+        <!-- Top Header For Food Website -->
+        <section class="top-header-section header-large-device">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-3 col-sm-6 col-md-6">
+                        <div class="topheader-social-icon">
+                            <ul>
+                                <li><a href="#"><span><i class="fa-brands fa-facebook-f"></i></span></a></li>
+                                <li><a href="#"><span><i class="fa-brands fa-twitter"></i></span></a></li>    
+                                <li><a href="#"><span><i class="fa-brands fa-linkedin-in"></i></span></a></li>
+                                <li><a href="#"><span><i class="fa-brands fa-instagram"></i></span></a></li>    
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-9 col-sm-6 col-md-6">
+                        <div class="top-header-links">
+                            <ul>
+                                <li>
+                                    <p class="topheader-shoplocation me-2">Shop:</p>
+                                </li>
+                                <li>
+                                    <div class="top-header-shop-location">
+                                        <select name="shop" id="shop" class="form-control form-control-sm">
+                                            <option value="">Select Shop</option>
+                                                <option value="1">Dhaka</option>
+                                                <option value="2">Khulna</option>
+                                                <option value="3">Cox's Bazar</option>
+                                        </select>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Header For Food Website Large Device-->
+        <section class="header-section header-large-device">
+            <div class="container">
+                <div class="" id="headerLarge">
+                    <nav class="navbar navbar-expand-lg">
+                        <div class="container-fluid">
+                            <a class="navbar-brand header-logo" href="/">
+                                <img src="../images/self-logo.png" alt="Logo">
+                            </a>
+                            <div class="collapse navbar-collapse">
+                                <ul class="navbar-nav header-navbar-nav m-auto mb-2 mb-lg-0">
+                                    <li class="nav-item">
+                                        <a class="nav-link header-navlink" aria-current="page" href="/">Home</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link header-navlink" href="../views/ourmenu.html">Order Now</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link header-navlink" href="/contact-us">Contact Us</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- Account Button -->
+                            <!-- <div class="header-button">
+                                <div class="dropdown">
+                                    <button class="btn mainbtn-primary account-btn dropdown-toggle" type="button"
+                                            data-bs-toggle="dropdown" aria-expanded="false">
+                                        <span><i class="fa-solid fa-user"></i></span>Account
+                                    </button>
+                                    <ul class="dropdown-menu accountbtn-dropdown-menu">
+                                        <li><a class="dropdown-item account-btn-item" href="/profile/details"><span><i
+                                                        class="fa-solid fa-user"></i></span>My Account</a></li>
+                                        <li><a class="dropdown-item account-btn-item" href="/profile/order"><span><i
+                                                        class="fa-solid fa-box"></i></span>My Order</a></li>
+                                        <li><a class="dropdown-item account-btn-item" data-bs-toggle="modal"
+                                               data-bs-target="#logoutModal" href="#"><span><i
+                                                        class="fa-solid fa-right-from-bracket"></i></span>Logout</a></li>
+                                    </ul>
+                                </div>
+                            </div> -->
+                            <div class="header-button">
+                                <a href="/login" class="btn mainbtn-primary login-btn">Login</a>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </section>
+        <!-- Header For Food Website Mobile Device Logo and Login Panel-->
+        <section class="mobile-header-section header-mobile-device">
+            <div class="mobile-header">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-7">
+                            <div class="mobileheader-logo">
+                                <a href="/"><img src="../images/self-logo.png" alt="Logo"></a>
+                            </div>
+                        </div>
+                        <div class="col-5">
+                            <!-- Account Button -->
+                            <!-- <div class="mobileheader-button">
+                                <div class="dropdown">
+                                    <button class="btn mainbtn-primary account-btn mobileaccount-btn dropdown-toggle"
+                                            type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        <span><i class="fa-solid fa-user"></i></span>
+                                    </button>
+                                    <ul class="dropdown-menu accountbtn-dropdown-menu mobileaccountbtn-dropdown-menu">
+                                        <li><a class="dropdown-item account-btn-item" href="/profile/details"><span><i
+                                                        class="fa-solid fa-user"></i></span>My Account</a></li>
+                                        <li><a class="dropdown-item account-btn-item" href="/profile/order"><span><i
+                                                        class="fa-solid fa-box"></i></span>My Order</a></li>
+                                        <li><a class="dropdown-item account-btn-item" data-bs-toggle="modal"
+                                               data-bs-target="#logoutModal" href="#"><span><i
+                                                        class="fa-solid fa-right-from-bracket"></i></span>Logout</a></li>
+                                    </ul>
+                                </div>
+                            </div> -->
+                            <div class="mobileheader-button">
+                                <a href="/login" class="btn mainbtn-primary login-btn">Login</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Header For Food Website Mobile Device Menu and Location Button Panel-->
+        <section class="mobile-header-section mobile-header-navsection header-mobile-device">
+            <div class="mobile-header-menu">
+                <div class="container">
+                    <div class="mobile-header-option">
+                        <nav class="navbar navbar-expand-lg">
+                            <div class="">
+                                <button class="navbar-toggler mobile-navbar-toggler" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                                        aria-expanded="false" aria-label="Toggle navigation">
+                                    <span class="navbar-toggler-icon"></span>
+                                </button>
+                                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                    <ul class="navbar-nav mobileheader-navbar-nav m-auto mb-2 mb-lg-0">
+                                        <li class="nav-item">
+                                            <a class="nav-link mobileheader-navlink active" aria-current="page" href="/"><span><i class="fa-solid fa-angles-right"></i></span> Home</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link mobileheader-navlink" href="../views/ourmenu.html"><span><i class="fa-solid fa-angles-right"></i></span> Order Now</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link mobileheader-navlink" href="#"><span><i class="fa-solid fa-angles-right"></i></span> Download Menu</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link mobileheader-navlink" href="/contact-us"><span><i class="fa-solid fa-angles-right"></i></span> Contact Us</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </nav>
+                        <div class="mobileheader-arrow-button btn mobileheader-collapse-btn" id="btn-collapse" data-bs-toggle="collapse" href="#LocationCollapse" role="button" aria-expanded="false" aria-controls="collapseExample">
+                                <p><span><i class="fa-solid fa-location-dot"></i></span> Dhaka</p>
+                            <div class="mobileheader-arrowbutton-hold">
+                                <p>
+                                    <span id="headerDownArrowIcon"><i class="fa-solid fa-angle-down"></i></span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="collapse headerlocation-collapse" id="LocationCollapse">
+                <div class="container">
+                    <div class="headerlocation-collapse-allcontent">
+                        <div class="headerlocation-collapse-title">
+                            <h4>Restaurant Food Dhaka</h4>
+                        </div>
+                        <div class="headerlocation-collapse-address">
+                            <p><span><a href="#" target="_blank">House #1, Block-A, Road-1, Malibagh, Dhaka</a></p>
+                        </div>
+                        <div class="headerlocation-collapse-address">
+                            <p><span><a href="#">info_restaurant@email.com</a></p>
+                        </div>
+                        <div class="headerlocation-collapse-address headerlocation-collapse-phone">
+                            <p><span><a href="#">+88 0123 456789</a></p>
+                        </div>
+                        <div class="headerlocation-collapse-openingtime">
+                            <h5><span><i class="fa-solid fa-clock"></i></span>Opening Times Today</h5>
+                            <div class="d-flex align-items-center justify-content-between">
+                                <div class="headerlocation-timing-title">
+                                    <h6>Opening Times</h6>
+                                </div>
+                                <div>
+                                    <p>09:30 - 19:00</p>
+                                </div>
+                            </div>
+                            <div class="d-flex align-items-center justify-content-between">
+                                <div class="headerlocation-timing-title">
+                                    <h6>Tomorrow</h6>
+                                </div>
+                                <div>
+                                    <p>09:30 - 18:00</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hlc-change-button">
+                            <a href="#" type="button" data-bs-toggle="modal" data-bs-target="#shopModal" class="ms-2 btn mainbtn-primary login-btn hlc-change-btn">Change Shop</a>    
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+
+    <!-- Menu Section -->
+    <section class="our-menu-section">
+        <div class="our-menu-overlay"></div>
+        <div class="container">
+            <div class="menu-header-branchname large-device">
+                <div class="row">
+                    <div class="col-md-12 m-auto">
+                        <div class="text-center header-branchname">
+                            <h5>
+                                You are ordering to Dhaka
+                                <a href="#" data-bs-toggle="modal" data-bs-target="#shopModal" class="ms-2 btn mainbtn-primary login-btn mt-1 mb-1 btn-sm" style="font-size: 14px">Change Shop</a>
+                            </h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="our-menus-content large-device">
+                <div class="row">
+                    <div class="col-md-8">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div id="list-example" class="list-group menu-list">
+                                    <div class="menu-title">
+                                        <h3>All Categories</h3>
+                                    </div>
+                                    <div class="menu-list-allitem">
+                                        <a class="list-group-item list-group-item-action menu-list-item"
+                                           href="#GrillItemsButton"><span><i class="fa-solid fa-caret-right"></i></span>Chicken Grill Items
+                                        </a>
+                                        <a class="list-group-item list-group-item-action menu-list-item"
+                                           href="#BurgersButton"><span><i class="fa-solid fa-caret-right"></i></span>Burgers
+                                        </a>
+                                        <a class="list-group-item list-group-item-action menu-list-item"
+                                           href="#BiriyaniButton"><span><i class="fa-solid fa-caret-right"></i></span>Biriyani
+                                        </a>
+                                        <a class="list-group-item list-group-item-action menu-list-item"
+                                           href="#RiceButton"><span><i class="fa-solid fa-caret-right"></i></span>Rice
+                                        </a>
+                                        <a class="list-group-item list-group-item-action menu-list-item"
+                                           href="#DrinksButton"><span><i class="fa-solid fa-caret-right"></i></span>Drinks
+                                        </a>
+                                        <a class="list-group-item list-group-item-action menu-list-item"
+                                           href="#SoupButton"><span><i class="fa-solid fa-caret-right"></i></span>Soup
+                                        </a>
+                                        <a class="list-group-item list-group-item-action menu-list-item"
+                                           href="#ChawmienButton"><span><i class="fa-solid fa-caret-right"></i></span>Chawmien
+                                        </a>
+                                        <a class="list-group-item list-group-item-action menu-list-item"
+                                           href="#FamilyPlattersButton"><span><i class="fa-solid fa-caret-right"></i></span>Family Platters
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-8">
+                                <div data-bs-spy="scroll" data-bs-target="#list-example" data-bs-smooth-scroll="true"
+                                     class="scrollspy-example" tabindex="0">
+
+                                    <div id="GrillItemsButton" class="all-list-item-content alllistitem-content-large">
+                                        <div class="accordion" id="accordionExampleGrillItems">
+                                            <div class="accordion-item">
+                                                <h2 class="accordion-header category-accordion-header">
+                                                    <button class="accordion-button food-item-accordion-button"
+                                                            type="button" data-bs-toggle="collapse"
+                                                            data-bs-target="#GrillItemsCategory" aria-expanded="true"
+                                                            aria-controls="GrillItemsCategory">
+                                                        Chicken Grill Items
+                                                    </button>
+                                                    <span>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam magnam.</span>
+                                                </h2>
+                                                <div id="GrillItemsCategory" class="accordion-collapse collapse show"
+                                                     data-bs-parent="#accordionExampleGrillItems">
+                                                    <div class="accordion-body food-item-accordion-body">
+                                                        <div class="row align-items-start clickable-modal"
+                                                             data-bs-toggle="modal" data-bs-target="#subItemModal">
+                                                            <div class="col-md-9">
+                                                                <div class="food-item-name">
+                                                                    <h3>Chicken Grill Items 1</h3>
+                                                                    <p class="food-description"></p>
+                                                                    <div class="food-item-price">
+                                                                        <p>$ 7.00</p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="col-md-3">
+                                                                <div class="food-item-image">
+                                                                    <img src="" alt="">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row align-items-start clickable-modal"
+                                                             data-bs-toggle="modal" data-bs-target="#subItemModal">
+                                                            <div class="col-md-9">
+                                                                <div class="food-item-name">
+                                                                    <h3>Chicken Grill Items 2</h3>
+                                                                    <p class="food-description"></p>
+                                                                    <div class="food-item-price">
+                                                                        <p>$ 5.00</p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="col-md-3">
+                                                                <div class="food-item-image">
+                                                                    <img src="" alt="">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row align-items-start clickable-modal"
+                                                             data-bs-toggle="modal" data-bs-target="#subItemModal">
+                                                            <div class="col-md-9">
+                                                                <div class="food-item-name">
+                                                                    <h3>Chicken Grill Items 3</h3>
+                                                                    <p class="food-description"></p>
+                                                                    <div class="food-item-price">
+                                                                        <p>$ 4.25</p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="col-md-3">
+                                                                <div class="food-item-image">
+                                                                    <img src="" alt="">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row align-items-start clickable-modal"
+                                                             data-bs-toggle="modal" data-bs-target="#subItemModal">
+                                                            <div class="col-md-9">
+                                                                <div class="food-item-name">
+                                                                    <h3>Chicken Grill Items 4</h3>
+                                                                    <p class="food-description"></p>
+                                                                    <div class="food-item-price">
+                                                                        <p>$ 2.50</p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="col-md-3">
+                                                                <div class="food-item-image">
+                                                                    <img src="" alt="">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div id="BurgersButton" class="all-list-item-content alllistitem-content-large">
+                                        <div class="accordion" id="accordionExampleBurgers">
+                                            <div class="accordion-item">
+                                                <h2 class="accordion-header category-accordion-header">
+                                                    <button class="accordion-button food-item-accordion-button"
+                                                            type="button" data-bs-toggle="collapse"
+                                                            data-bs-target="#BurgersCategory" aria-expanded="true"
+                                                            aria-controls="BurgersCategory">
+                                                        Burgers
+                                                    </button>
+                                                    <span>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam magnam.</span>
+                                                </h2>
+                                                <div id="BurgersCategory" class="accordion-collapse collapse show"
+                                                     data-bs-parent="#accordionExampleBurgers">
+                                                    <div class="accordion-body food-item-accordion-body">
+                                                        <div class="row align-items-start clickable-modal"
+                                                             data-bs-toggle="modal" data-bs-target="#subItemModal">
+                                                            <div class="col-md-9">
+                                                                <div class="food-item-name">
+                                                                    <h3>Burger 1</h3>
+                                                                    <p class="food-description"></p>
+                                                                    <div class="food-item-price">
+                                                                        <p>$ 4.30</p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="col-md-3">
+                                                                <div class="food-item-image">
+                                                                    <img src="" alt="">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row align-items-start clickable-modal"
+                                                             data-bs-toggle="modal" data-bs-target="#subItemModal">
+                                                            <div class="col-md-9">
+                                                                <div class="food-item-name">
+                                                                    <h3>Burger 2</h3>
+                                                                    <p class="food-description"></p>
+                                                                    <div class="food-item-price">
+                                                                        <p>$ 3.80</p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="col-md-3">
+                                                                <div class="food-item-image">
+                                                                    <img src="" alt="">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row align-items-start clickable-modal"
+                                                             data-bs-toggle="modal" data-bs-target="#subItemModal">
+                                                            <div class="col-md-9">
+                                                                <div class="food-item-name">
+                                                                    <h3>Burger 3</h3>
+                                                                    <p class="food-description"></p>
+                                                                    <div class="food-item-price">
+                                                                        <p>$ 3.30</p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="col-md-3">
+                                                                <div class="food-item-image">
+                                                                    <img src="" alt="">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row align-items-start clickable-modal"
+                                                             data-bs-toggle="modal" data-bs-target="#subItemModal">
+                                                            <div class="col-md-9">
+                                                                <div class="food-item-name">
+                                                                    <h3>Burger 4</h3>
+                                                                    <p class="food-description"></p>
+                                                                    <div class="food-item-price">
+                                                                        <p>£ 5.00</p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="col-md-3">
+                                                                <div class="food-item-image">
+                                                                    <img src="" alt="">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div id="BiriyaniButton" class="all-list-item-content alllistitem-content-large">
+                                        <div class="accordion" id="accordionExampleBiriyani">
+                                            <div class="accordion-item">
+                                                <h2 class="accordion-header category-accordion-header">
+                                                    <button class="accordion-button food-item-accordion-button"
+                                                            type="button" data-bs-toggle="collapse"
+                                                            data-bs-target="#BiriyaniCategory" aria-expanded="true"
+                                                            aria-controls="BiriyaniCategory">
+                                                        Biriyani
+                                                    </button>
+                                                    <span>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam magnam.</span>
+                                                </h2>
+                                                <div id="BiriyaniCategory" class="accordion-collapse collapse show"
+                                                     data-bs-parent="#accordionExampleBiriyani">
+                                                    <div class="accordion-body food-item-accordion-body">
+                                                        <div class="row align-items-start clickable-modal"
+                                                             data-bs-toggle="modal" data-bs-target="#subItemModal">
+                                                            <div class="col-md-9">
+                                                                <div class="food-item-name">
+                                                                    <h3>Biriyani 1</h3>
+                                                                    <p class="food-description"></p>
+                                                                    <div class="food-item-price">
+                                                                        <p>$ 5.50</p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="col-md-3">
+                                                                <div class="food-item-image">
+                                                                    <img src="" alt="">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row align-items-start clickable-modal"
+                                                             data-bs-toggle="modal" data-bs-target="#subItemModal">
+                                                            <div class="col-md-9">
+                                                                <div class="food-item-name">
+                                                                    <h3>Biriyani 2</h3>
+                                                                    <p class="food-description"></p>
+                                                                    <div class="food-item-price">
+                                                                        <p>$ 5.85</p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="col-md-3">
+                                                                <div class="food-item-image">
+                                                                    <img src="" alt="">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row align-items-start clickable-modal"
+                                                             data-bs-toggle="modal" data-bs-target="#subItemModal">
+                                                            <div class="col-md-9">
+                                                                <div class="food-item-name">
+                                                                    <h3>Biriyani 3</h3>
+                                                                    <p class="food-description"></p>
+                                                                    <div class="food-item-price">
+                                                                        <p>$ 7.30</p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="col-md-3">
+                                                                <div class="food-item-image">
+                                                                    <img src="" alt="">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row align-items-start clickable-modal"
+                                                             data-bs-toggle="modal" data-bs-target="#subItemModal">
+                                                            <div class="col-md-9">
+                                                                <div class="food-item-name">
+                                                                    <h3>Biriyani 4</h3>
+                                                                    <p class="food-description"></p>
+                                                                    <div class="food-item-price">
+                                                                        <p>$ 3.95</p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="col-md-3">
+                                                                <div class="food-item-image">
+                                                                    <img src="" alt="">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div id="RiceButton" class="all-list-item-content alllistitem-content-large">
+                                        <div class="accordion" id="accordionExampleRice">
+                                            <div class="accordion-item">
+                                                <h2 class="accordion-header category-accordion-header">
+                                                    <button class="accordion-button food-item-accordion-button"
+                                                            type="button" data-bs-toggle="collapse"
+                                                            data-bs-target="#RiceCategory" aria-expanded="true"
+                                                            aria-controls="RiceCategory">
+                                                        Rice
+                                                    </button>
+                                                    <span>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam magnam.</span>
+                                                </h2>
+                                                <div id="RiceCategory" class="accordion-collapse collapse show"
+                                                     data-bs-parent="#accordionExampleRice">
+                                                    <div class="accordion-body food-item-accordion-body">
+                                                        <div class="row align-items-start clickable-modal"
+                                                             data-bs-toggle="modal" data-bs-target="#subItemModal">
+                                                            <div class="col-md-9">
+                                                                <div class="food-item-name">
+                                                                    <h3>Rice 1</h3>
+                                                                    <p class="food-description"></p>
+                                                                    <div class="food-item-price">
+                                                                        <p>$ 3.50</p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="col-md-3">
+                                                                <div class="food-item-image">
+                                                                    <img src="" alt="">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row align-items-start clickable-modal"
+                                                             data-bs-toggle="modal" data-bs-target="#subItemModal">
+                                                            <div class="col-md-9">
+                                                                <div class="food-item-name">
+                                                                    <h3>Rice 2</h3>
+                                                                    <p class="food-description"></p>
+                                                                    <div class="food-item-price">
+                                                                        <p>$ 4.30</p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="col-md-3">
+                                                                <div class="food-item-image">
+                                                                    <img src="" alt="">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row align-items-start clickable-modal"
+                                                             data-bs-toggle="modal" data-bs-target="#subItemModal">
+                                                            <div class="col-md-9">
+                                                                <div class="food-item-name">
+                                                                    <h3>Rice 3</h3>
+                                                                    <p class="food-description"></p>
+                                                                    <div class="food-item-price">
+                                                                        <p>$ 3.50</p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="col-md-3">
+                                                                <div class="food-item-image">
+                                                                    <img src="" alt="">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row align-items-start clickable-modal"
+                                                             data-bs-toggle="modal" data-bs-target="#subItemModal">
+                                                            <div class="col-md-9">
+                                                                <div class="food-item-name">
+                                                                    <h3>Rice 4</h3>
+                                                                    <p class="food-description"></p>
+                                                                    <div class="food-item-price">
+                                                                        <p>$ 2.90</p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="col-md-3">
+                                                                <div class="food-item-image">
+                                                                    <img src="" alt="">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div id="DrinksButton" class="all-list-item-content alllistitem-content-large">
+                                        <div class="accordion" id="accordionExampleDrinks">
+                                            <div class="accordion-item">
+                                                <h2 class="accordion-header category-accordion-header">
+                                                    <button class="accordion-button food-item-accordion-button"
+                                                            type="button" data-bs-toggle="collapse"
+                                                            data-bs-target="#DrinksCategory" aria-expanded="true"
+                                                            aria-controls="DrinksCategory">
+                                                        Drinks
+                                                    </button>
+                                                    <span>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam magnam.</span>
+                                                </h2>
+                                                <div id="DrinksCategory" class="accordion-collapse collapse show"
+                                                     data-bs-parent="#accordionExampleDrinks">
+                                                    <div class="accordion-body food-item-accordion-body">
+                                                        <div class="row align-items-start clickable-modal"
+                                                             data-bs-toggle="modal" data-bs-target="#subItemModal">
+                                                            <div class="col-md-9">
+                                                                <div class="food-item-name">
+                                                                    <h3>Drinks 1</h3>
+                                                                    <p class="food-description"></p>
+                                                                    <div class="food-item-price">
+                                                                        <p>$ 2.20</p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="col-md-3">
+                                                                <div class="food-item-image">
+                                                                    <img src="" alt="">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row align-items-start clickable-modal"
+                                                             data-bs-toggle="modal" data-bs-target="#subItemModal">
+                                                            <div class="col-md-9">
+                                                                <div class="food-item-name">
+                                                                    <h3>Drinks 2</h3>
+                                                                    <p class="food-description"></p>
+                                                                    <div class="food-item-price">
+                                                                        <p>$ 2.00</p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="col-md-3">
+                                                                <div class="food-item-image">
+                                                                    <img src="" alt="">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row align-items-start clickable-modal"
+                                                             data-bs-toggle="modal" data-bs-target="#subItemModal">
+                                                            <div class="col-md-9">
+                                                                <div class="food-item-name">
+                                                                    <h3>Drinks 3</h3>
+                                                                    <p class="food-description"></p>
+                                                                    <div class="food-item-price">
+                                                                        <p>$ 1.80</p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="col-md-3">
+                                                                <div class="food-item-image">
+                                                                    <img src="" alt="">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row align-items-start clickable-modal"
+                                                             data-bs-toggle="modal" data-bs-target="#subItemModal">
+                                                            <div class="col-md-9">
+                                                                <div class="food-item-name">
+                                                                    <h3>Drinks 4</h3>
+                                                                    <p class="food-description"></p>
+                                                                    <div class="food-item-price">
+                                                                        <p>$ 1.20</p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="col-md-3">
+                                                                <div class="food-item-image">
+                                                                    <img src="" alt="">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div id="SoupButton" class="all-list-item-content alllistitem-content-large">
+                                        <div class="accordion" id="accordionExampleSoup">
+                                            <div class="accordion-item">
+                                                <h2 class="accordion-header category-accordion-header">
+                                                    <button class="accordion-button food-item-accordion-button"
+                                                            type="button" data-bs-toggle="collapse"
+                                                            data-bs-target="#SoupCategory" aria-expanded="true"
+                                                            aria-controls="SoupCategory">
+                                                        Soup
+                                                    </button>
+                                                    <span>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam magnam.</span>
+                                                </h2>
+                                                <div id="SoupCategory" class="accordion-collapse collapse show"
+                                                     data-bs-parent="#accordionExampleSoup">
+                                                    <div class="accordion-body food-item-accordion-body">
+                                                        <div class="row align-items-start clickable-modal"
+                                                             data-bs-toggle="modal" data-bs-target="#subItemModal">
+                                                            <div class="col-md-9">
+                                                                <div class="food-item-name">
+                                                                    <h3>Soup 1</h3>
+                                                                    <p class="food-description"></p>
+                                                                    <div class="food-item-price">
+                                                                        <p>$ 3.00</p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="col-md-3">
+                                                                <div class="food-item-image">
+                                                                    <img src="" alt="">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row align-items-start clickable-modal"
+                                                             data-bs-toggle="modal" data-bs-target="#subItemModal">
+                                                            <div class="col-md-9">
+                                                                <div class="food-item-name">
+                                                                    <h3>Soup 2</h3>
+                                                                    <p class="food-description"></p>
+                                                                    <div class="food-item-price">
+                                                                        <p>$ 5.00</p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="col-md-3">
+                                                                <div class="food-item-image">
+                                                                    <img src="" alt="">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row align-items-start clickable-modal"
+                                                             data-bs-toggle="modal" data-bs-target="#subItemModal">
+                                                            <div class="col-md-9">
+                                                                <div class="food-item-name">
+                                                                    <h3>Soup 3</h3>
+                                                                    <p class="food-description"></p>
+                                                                    <div class="food-item-price">
+                                                                        <p>$ 4.50</p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="col-md-3">
+                                                                <div class="food-item-image">
+                                                                    <img src="" alt="">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row align-items-start clickable-modal"
+                                                             data-bs-toggle="modal" data-bs-target="#subItemModal">
+                                                            <div class="col-md-9">
+                                                                <div class="food-item-name">
+                                                                    <h3>Soup 4</h3>
+                                                                    <p class="food-description"></p>
+                                                                    <div class="food-item-price">
+                                                                        <p>$ 5.50</p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="col-md-3">
+                                                                <div class="food-item-image">
+                                                                    <img src="" alt="">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div id="ChawmienButton" class="all-list-item-content alllistitem-content-large">
+                                        <div class="accordion" id="accordionExampleJuniorMeals">
+                                            <div class="accordion-item">
+                                                <h2 class="accordion-header category-accordion-header">
+                                                    <button class="accordion-button food-item-accordion-button"
+                                                            type="button" data-bs-toggle="collapse"
+                                                            data-bs-target="#ChawmienCategory" aria-expanded="true"
+                                                            aria-controls="ChawmienCategory">
+                                                        Chawmien
+                                                    </button>
+                                                    <span>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam magnam.</span>
+                                                </h2>
+                                                <div id="ChawmienCategory" class="accordion-collapse collapse show"
+                                                     data-bs-parent="#accordionExampleJuniorMeals">
+                                                    <div class="accordion-body food-item-accordion-body">
+                                                        <div class="row align-items-start clickable-modal"
+                                                             data-bs-toggle="modal" data-bs-target="#subItemModal">
+                                                            <div class="col-md-9">
+                                                                <div class="food-item-name">
+                                                                    <h3>Chawmien 1</h3>
+                                                                    <p class="food-description"></p>
+                                                                    <div class="food-item-price">
+                                                                        <p>$ 5.00</p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="col-md-3">
+                                                                <div class="food-item-image">
+                                                                    <img src="" alt="">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row align-items-start clickable-modal"
+                                                             data-bs-toggle="modal" data-bs-target="#subItemModal">
+                                                            <div class="col-md-9">
+                                                                <div class="food-item-name">
+                                                                    <h3>Chawmien 2</h3>
+                                                                    <p class="food-description"></p>
+                                                                    <div class="food-item-price">
+                                                                        <p>$ 5.00</p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="col-md-3">
+                                                                <div class="food-item-image">
+                                                                    <img src="" alt="">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row align-items-start clickable-modal"
+                                                             data-bs-toggle="modal" data-bs-target="#subItemModal">
+                                                            <div class="col-md-9">
+                                                                <div class="food-item-name">
+                                                                    <h3>Chawmien 3</h3>
+                                                                    <p class="food-description"></p>
+                                                                    <div class="food-item-price">
+                                                                        <p>$ 3.00</p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="col-md-3">
+                                                                <div class="food-item-image">
+                                                                    <img src="" alt="">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row align-items-start clickable-modal"
+                                                             data-bs-toggle="modal" data-bs-target="#subItemModal">
+                                                            <div class="col-md-9">
+                                                                <div class="food-item-name">
+                                                                    <h3>Chawmien 4</h3>
+                                                                    <p class="food-description"></p>
+                                                                    <div class="food-item-price">
+                                                                        <p>$ 2.50</p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="col-md-3">
+                                                                <div class="food-item-image">
+                                                                    <img src="" alt="">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div id="FamilyPlattersButton" class="all-list-item-content alllistitem-content-large">
+                                        <div class="accordion" id="accordionExampleFamilyPlatters">
+                                            <div class="accordion-item">
+                                                <h2 class="accordion-header category-accordion-header">
+                                                    <button class="accordion-button food-item-accordion-button"
+                                                            type="button" data-bs-toggle="collapse"
+                                                            data-bs-target="#FamilyPlattersCategory" aria-expanded="true"
+                                                            aria-controls="FamilyPlattersCategory">
+                                                        Family Platters
+                                                    </button>
+                                                    <span>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam magnam.</span>
+                                                </h2>
+                                                <div id="FamilyPlattersCategory" class="accordion-collapse collapse show"
+                                                     data-bs-parent="#accordionExampleFamilyPlatters">
+                                                    <div class="accordion-body food-item-accordion-body">
+                                                        <div class="row align-items-start clickable-modal"
+                                                             data-bs-toggle="modal" data-bs-target="#subItemModal">
+                                                            <div class="col-md-9">
+                                                                <div class="food-item-name">
+                                                                    <h3>Family Platters 1</h3>
+                                                                    <p class="food-description"></p>
+                                                                    <div class="food-item-price">
+                                                                        <p>$ 30.00</p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="col-md-3">
+                                                                <div class="food-item-image">
+                                                                    <img src="" alt="">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row align-items-start clickable-modal"
+                                                             data-bs-toggle="modal" data-bs-target="#subItemModal">
+                                                            <div class="col-md-9">
+                                                                <div class="food-item-name">
+                                                                    <h3>Family Platters 2</h3>
+                                                                    <p class="food-description"></p>
+                                                                    <div class="food-item-price">
+                                                                        <p>$ 25.00</p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="col-md-3">
+                                                                <div class="food-item-image">
+                                                                    <img src="" alt="">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row align-items-start clickable-modal"
+                                                             data-bs-toggle="modal" data-bs-target="#subItemModal">
+                                                            <div class="col-md-9">
+                                                                <div class="food-item-name">
+                                                                    <h3>Family Platters 3</h3>
+                                                                    <p class="food-description"></p>
+                                                                    <div class="food-item-price">
+                                                                        <p>$ 32.50</p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="col-md-3">
+                                                                <div class="food-item-image">
+                                                                    <img src="" alt="">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row align-items-start clickable-modal"
+                                                             data-bs-toggle="modal" data-bs-target="#subItemModal">
+                                                            <div class="col-md-9">
+                                                                <div class="food-item-name">
+                                                                    <h3>Family Platters 4</h3>
+                                                                    <p class="food-description"></p>
+                                                                    <div class="food-item-price">
+                                                                        <p>$ 40.00</p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="col-md-3">
+                                                                <div class="food-item-image">
+                                                                    <img src="" alt="">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="four-delivery-content">
+                            <div class="four-dc-item">
+                                <div class="four-dc-icon">
+                                    <span><i class="fa-solid fa-bicycle"></i></span>
+                                </div>
+                                <p>Delivery From: 11:00:00</p>
+                            </div>
+                            <div class="four-dc-item">
+                                <div class="four-dc-icon">
+                                    <span><i class="fa-solid fa-bag-shopping"></i></span>
+                                </div>
+                                <p>Collection From: 11:00:00</p>
+                            </div>
+                            <div class="four-dc-item">
+                                <div class="four-dc-icon">
+                                    <span><i class="fa-solid fa-clock"></i></span>
+                                </div>
+                                <p>Delivery: 45 Minutes</p>
+                            </div>
+                            <div class="four-dc-item">
+                                <div class="four-dc-icon">
+                                    <span><i class="fa-solid fa-user-clock"></i></span>
+                                </div>
+                                <p>Collection: 35 Minutes</p>
+                            </div>
+                        </div>
+
+                        <div class="product-offer-box">
+                            <div class="po-box-header">
+                                <h5><span><i class="fa-solid fa-gift"></i></span>Offers</h5>
+                            </div>
+                            <div class="po-box-body">
+                                <p>15% OFF</p>
+                            </div>
+                        </div>
+
+                        <!-- Cart -->
+                        <div class="product-busket">
+                            <div class="product-busket-heading">
+                                <div class="busket-title">
+                                    <h5><span><i class="fa-solid fa-basket-shopping"></i></span> Your Basket</h5>
+                                </div>
+                                <div class="busket-item">
+                                    <div class="busket-item-box">
+                                        3
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Cart Length -->
+                            <div class="product-busket-body">
+
+                                <div class="product-busket-heightcontrol">
+                                    <!-- Loop Start -->
+                                    <div class="busket-product-item">
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <div class="busket-productitem-title">
+                                                    <h3>Grill Items 1</h3>
+                                                    <div>
+                                                        <p>
+                                                            <small>- Pepsi</small>
+                                                        </p>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12">
+                                                <div class="busket-productitem-comment">
+                                                    <input type="text"
+                                                           class="form-control form-control-sm busket-comment-form-control"
+                                                           placeholder="Enter comment(if any)">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12">
+                                                <div class="busket-productitem-action">
+                                                    <div class="busket-product-quantity">
+                                                        <div class="quantityincrease">
+                                                            <button class="btn mainbtn-primary quantitybtn text-white"><span><i
+                                                                        class="fa-solid fa-minus"></i></span></button>
+                                                            <input type="number" class="form-control quantityfield"
+                                                                   placeholder="0" readonly>
+                                                            <button class="btn mainbtn-primary quantitybtn text-white"><span><i
+                                                                        class="fa-solid fa-plus"></i></span></button>
+                                                        </div>
+                                                    </div>
+                                                    <div class="busket-product-action">
+                                                        <div class="busket-product-price">
+                                                            $ 3.30
+                                                        </div>
+                                                        <div class="p-action">
+                                                            <a href="#"><i class="fa-solid fa-trash text-white"></i></a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="busket-product-item">
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <div class="busket-productitem-title">
+                                                    <h3>Burger 2</h3>
+                                                    <div>
+                                                        <p>
+                                                            <small>- Potato Fries</small>
+                                                        </p>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12">
+                                                <div class="busket-productitem-comment">
+                                                    <input type="text"
+                                                           class="form-control form-control-sm busket-comment-form-control"
+                                                           placeholder="Enter comment(if any)">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12">
+                                                <div class="busket-productitem-action">
+                                                    <div class="busket-product-quantity">
+                                                        <div class="quantityincrease">
+                                                            <button class="btn mainbtn-primary quantitybtn text-white"><span><i
+                                                                        class="fa-solid fa-minus"></i></span></button>
+                                                            <input type="number" class="form-control quantityfield"
+                                                                   placeholder="0" readonly>
+                                                            <button class="btn mainbtn-primary quantitybtn text-white"><span><i
+                                                                        class="fa-solid fa-plus"></i></span></button>
+                                                        </div>
+                                                    </div>
+                                                    <div class="busket-product-action">
+                                                        <div class="busket-product-price">
+                                                            $ 5.30
+                                                        </div>
+                                                        <div class="p-action">
+                                                            <a href="#"><i class="fa-solid fa-trash text-white"></i></a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="busket-product-item">
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <div class="busket-productitem-title">
+                                                    <h3>Rice Item 3</h3>
+                                                    <div>
+                                                        <p>
+                                                            <small>- Chicken</small>
+                                                            <br>
+                                                            <small>- Pepsi</small>
+                                                        </p>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12">
+                                                <div class="busket-productitem-comment">
+                                                    <input type="text"
+                                                           class="form-control form-control-sm busket-comment-form-control"
+                                                           placeholder="Enter comment(if any)">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12">
+                                                <div class="busket-productitem-action">
+                                                    <div class="busket-product-quantity">
+                                                        <div class="quantityincrease">
+                                                            <button class="btn mainbtn-primary quantitybtn text-white"><span><i
+                                                                        class="fa-solid fa-minus"></i></span></button>
+                                                            <input type="number" class="form-control quantityfield"
+                                                                   placeholder="0" readonly>
+                                                            <button class="btn mainbtn-primary quantitybtn text-white"><span><i
+                                                                        class="fa-solid fa-plus"></i></span></button>
+                                                        </div>
+                                                    </div>
+                                                    <div class="busket-product-action">
+                                                        <div class="busket-product-price">
+                                                            $ 3.30
+                                                        </div>
+                                                        <div class="p-action">
+                                                            <a href="#"><i class="fa-solid fa-trash text-white"></i></a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="busket-subtotal">
+                                    <div class="subtotal-amount">
+                                        <p>Sub Total : <span>$ 3.30</span></p>
+                                    </div>
+                                    <div class="busket-product-commentbox">
+                                        <label><span><i class="fa-solid fa-comment"></i></span>Comment</label>
+                                        <textarea name="" id="" cols="30" rows="3"
+                                                  class="form-control comment-textarea-formcontrol"
+                                                  placeholder="Write your comment here (if any)"></textarea>
+                                    </div>
+                                    <div class="checkout-button">
+                                        <a href="#"
+                                           class="btn mainbtn-primary busketcheckoutbtn">Checkout</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="our-menus-mobilecontent mobile-device">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div id="mobileMenuSlide" class="mobile-menu-list-item owl-carousel owl-loaded owl-drag">
+                            <div class="item">
+                                <a href="#mobileGrillItemsButton" class="cat-menu-item">Grill Items</a>
+                                <a href="#mobileBurgersButton" class="cat-menu-item">Burgers</a>
+                                <a href="#mobileBiriyaniButton" class="cat-menu-item">Biriyani</a>
+                                <a href="#mobileRiceButton" class="cat-menu-item">Rice</a>
+                                <a href="#mobileDrinksButton" class="cat-menu-item">Drinks</a>
+                                <a href="#mobileSoupButton" class="cat-menu-item">Soup</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <div data-bs-spy="scroll" data-bs-target="#mobileMenuSlide" data-bs-offset="50"
+                             class="scrollspy-example" tabindex="0">
+
+                            <div class="accordion allaccordion-menu-items"
+                                 id="mobileaccordionExampleGrillItems">
+                                <section class="accordion-item main-menu-all-item" id="mobileGrillItemsButton">
+                                    <h2 class="accordion-header category-accordion-header">
+                                        <button class="accordion-button category-accordionbutton-mobile" type="button"
+                                                data-bs-toggle="collapse"
+                                                data-bs-target="#mobilecollapseGrillItemsCategory" aria-expanded="true"
+                                                aria-controls="mobilecollapseGrillItemsCategory">
+                                            Grill Items
+                                        </button>
+                                        <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et fugiat officiis eius quibusdam dolor.</span>
+                                    </h2>
+                                    <div id="mobilecollapseGrillItemsCategory" class="accordion-collapse collapse show"
+                                         data-bs-parent="#mobileaccordionExampleGrillItems">
+                                        <div class="accordion-body mobilefood-accordion-body">
+                                            <div class="row align-items-start mobile-fooditem-row clickable-modal">
+                                                <div class="col-9 col-md-9">
+                                                    <div class="food-item-name">
+                                                        <h3>Grill Items 1</h3>
+                                                        <p class="food-description"></p>
+                                                        <div class="food-item-price">
+                                                            <p>$ 5.00</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-3 col-md-3">
+                                                    <div class="food-item-image">
+                                                        <img src=""
+                                                             alt="">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row align-items-start mobile-fooditem-row clickable-modal">
+                                                <div class="col-9 col-md-9">
+                                                    <div class="food-item-name">
+                                                        <h3>Grill Items 2</h3>
+                                                        <p class="food-description"></p>
+                                                        <div class="food-item-price">
+                                                            <p>$ 5.00</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-3 col-md-3">
+                                                    <div class="food-item-image">
+                                                        <img src=""
+                                                             alt="">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row align-items-start mobile-fooditem-row clickable-modal">
+                                                <div class="col-9 col-md-9">
+                                                    <div class="food-item-name">
+                                                        <h3>Grill Items 3</h3>
+                                                        <p class="food-description"></p>
+                                                        <div class="food-item-price">
+                                                            <p>$ 5.00</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-3 col-md-3">
+                                                    <div class="food-item-image">
+                                                        <img src=""
+                                                             alt="">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row align-items-start mobile-fooditem-row clickable-modal">
+                                                <div class="col-9 col-md-9">
+                                                    <div class="food-item-name">
+                                                        <h3>Grill Items 4</h3>
+                                                        <p class="food-description"></p>
+                                                        <div class="food-item-price">
+                                                            <p>$ 5.00</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-3 col-md-3">
+                                                    <div class="food-item-image">
+                                                        <img src=""
+                                                             alt="">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                            </div>
+                            <div class="accordion allaccordion-menu-items"
+                                 id="mobileaccordionExampleBurgers">
+                                <section class="accordion-item main-menu-all-item" id="mobileBurgersButton">
+                                    <h2 class="accordion-header category-accordion-header">
+                                        <button class="accordion-button category-accordionbutton-mobile" type="button"
+                                                data-bs-toggle="collapse"
+                                                data-bs-target="#mobilecollapseBurgersCategory" aria-expanded="true"
+                                                aria-controls="mobilecollapseBurgersCategory">
+                                            Burgers
+                                        </button>
+                                        <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et fugiat officiis eius quibusdam dolor.</span>
+                                    </h2>
+                                    <div id="mobilecollapseBurgersCategory" class="accordion-collapse collapse show"
+                                         data-bs-parent="#mobileaccordionExampleBurgers">
+                                        <div class="accordion-body mobilefood-accordion-body">
+                                            <div class="row align-items-start mobile-fooditem-row clickable-modal">
+                                                <div class="col-9 col-md-9">
+                                                    <div class="food-item-name">
+                                                        <h3>Burgers 1</h3>
+                                                        <p class="food-description"></p>
+                                                        <div class="food-item-price">
+                                                            <p>$ 5.00</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-3 col-md-3">
+                                                    <div class="food-item-image">
+                                                        <img src=""
+                                                             alt="">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row align-items-start mobile-fooditem-row clickable-modal">
+                                                <div class="col-9 col-md-9">
+                                                    <div class="food-item-name">
+                                                        <h3>Burgers 2</h3>
+                                                        <p class="food-description"></p>
+                                                        <div class="food-item-price">
+                                                            <p>$ 5.00</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-3 col-md-3">
+                                                    <div class="food-item-image">
+                                                        <img src=""
+                                                             alt="">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row align-items-start mobile-fooditem-row clickable-modal">
+                                                <div class="col-9 col-md-9">
+                                                    <div class="food-item-name">
+                                                        <h3>Burgers 3</h3>
+                                                        <p class="food-description"></p>
+                                                        <div class="food-item-price">
+                                                            <p>$ 5.00</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-3 col-md-3">
+                                                    <div class="food-item-image">
+                                                        <img src=""
+                                                             alt="">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row align-items-start mobile-fooditem-row clickable-modal">
+                                                <div class="col-9 col-md-9">
+                                                    <div class="food-item-name">
+                                                        <h3>Burgers 4</h3>
+                                                        <p class="food-description"></p>
+                                                        <div class="food-item-price">
+                                                            <p>$ 5.00</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-3 col-md-3">
+                                                    <div class="food-item-image">
+                                                        <img src=""
+                                                             alt="">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                            </div>
+                            <div class="accordion allaccordion-menu-items"
+                                 id="mobileaccordionExampleBiriyani">
+                                <section class="accordion-item main-menu-all-item" id="mobileBiriyaniButton">
+                                    <h2 class="accordion-header category-accordion-header">
+                                        <button class="accordion-button category-accordionbutton-mobile" type="button"
+                                                data-bs-toggle="collapse"
+                                                data-bs-target="#mobilecollapseBiriyaniCategory" aria-expanded="true"
+                                                aria-controls="mobilecollapseBiriyaniCategory">
+                                            Biriyani
+                                        </button>
+                                        <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et fugiat officiis eius quibusdam dolor.</span>
+                                    </h2>
+                                    <div id="mobilecollapseBiriyaniCategory" class="accordion-collapse collapse show"
+                                         data-bs-parent="#mobileaccordionExampleBiriyani">
+                                        <div class="accordion-body mobilefood-accordion-body">
+                                            <div class="row align-items-start mobile-fooditem-row clickable-modal">
+                                                <div class="col-9 col-md-9">
+                                                    <div class="food-item-name">
+                                                        <h3>Biriyani 1</h3>
+                                                        <p class="food-description"></p>
+                                                        <div class="food-item-price">
+                                                            <p>$ 5.00</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-3 col-md-3">
+                                                    <div class="food-item-image">
+                                                        <img src=""
+                                                             alt="">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row align-items-start mobile-fooditem-row clickable-modal">
+                                                <div class="col-9 col-md-9">
+                                                    <div class="food-item-name">
+                                                        <h3>Biriyani 2</h3>
+                                                        <p class="food-description"></p>
+                                                        <div class="food-item-price">
+                                                            <p>$ 5.00</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-3 col-md-3">
+                                                    <div class="food-item-image">
+                                                        <img src=""
+                                                             alt="">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row align-items-start mobile-fooditem-row clickable-modal">
+                                                <div class="col-9 col-md-9">
+                                                    <div class="food-item-name">
+                                                        <h3>Biriyani 3</h3>
+                                                        <p class="food-description"></p>
+                                                        <div class="food-item-price">
+                                                            <p>$ 5.00</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-3 col-md-3">
+                                                    <div class="food-item-image">
+                                                        <img src=""
+                                                             alt="">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row align-items-start mobile-fooditem-row clickable-modal">
+                                                <div class="col-9 col-md-9">
+                                                    <div class="food-item-name">
+                                                        <h3>Biriyani 4</h3>
+                                                        <p class="food-description"></p>
+                                                        <div class="food-item-price">
+                                                            <p>$ 5.00</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-3 col-md-3">
+                                                    <div class="food-item-image">
+                                                        <img src=""
+                                                             alt="">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                            </div>
+                            <div class="accordion allaccordion-menu-items"
+                                 id="mobileaccordionExampleRice">
+                                <section class="accordion-item main-menu-all-item" id="mobileRiceButton">
+                                    <h2 class="accordion-header category-accordion-header">
+                                        <button class="accordion-button category-accordionbutton-mobile" type="button"
+                                                data-bs-toggle="collapse"
+                                                data-bs-target="#mobilecollapseRiceCategory" aria-expanded="true"
+                                                aria-controls="mobilecollapseRiceCategory">
+                                            Rice
+                                        </button>
+                                        <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et fugiat officiis eius quibusdam dolor.</span>
+                                    </h2>
+                                    <div id="mobilecollapseRiceCategory" class="accordion-collapse collapse show"
+                                         data-bs-parent="#mobileaccordionExampleRice">
+                                        <div class="accordion-body mobilefood-accordion-body">
+                                            <div class="row align-items-start mobile-fooditem-row clickable-modal">
+                                                <div class="col-9 col-md-9">
+                                                    <div class="food-item-name">
+                                                        <h3>Rice Items 1</h3>
+                                                        <p class="food-description"></p>
+                                                        <div class="food-item-price">
+                                                            <p>$ 5.00</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-3 col-md-3">
+                                                    <div class="food-item-image">
+                                                        <img src=""
+                                                             alt="">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row align-items-start mobile-fooditem-row clickable-modal">
+                                                <div class="col-9 col-md-9">
+                                                    <div class="food-item-name">
+                                                        <h3>Rice Items 2</h3>
+                                                        <p class="food-description"></p>
+                                                        <div class="food-item-price">
+                                                            <p>$ 5.00</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-3 col-md-3">
+                                                    <div class="food-item-image">
+                                                        <img src=""
+                                                             alt="">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row align-items-start mobile-fooditem-row clickable-modal">
+                                                <div class="col-9 col-md-9">
+                                                    <div class="food-item-name">
+                                                        <h3>Rice Items 3</h3>
+                                                        <p class="food-description"></p>
+                                                        <div class="food-item-price">
+                                                            <p>$ 5.00</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-3 col-md-3">
+                                                    <div class="food-item-image">
+                                                        <img src=""
+                                                             alt="">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row align-items-start mobile-fooditem-row clickable-modal">
+                                                <div class="col-9 col-md-9">
+                                                    <div class="food-item-name">
+                                                        <h3>Rice Items 4</h3>
+                                                        <p class="food-description"></p>
+                                                        <div class="food-item-price">
+                                                            <p>$ 5.00</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-3 col-md-3">
+                                                    <div class="food-item-image">
+                                                        <img src=""
+                                                             alt="">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                            </div>
+                            <div class="accordion allaccordion-menu-items"
+                                 id="mobileaccordionExampleDrinks">
+                                <section class="accordion-item main-menu-all-item" id="mobileDrinksButton">
+                                    <h2 class="accordion-header category-accordion-header">
+                                        <button class="accordion-button category-accordionbutton-mobile" type="button"
+                                                data-bs-toggle="collapse"
+                                                data-bs-target="#mobilecollapseDrinksCategory" aria-expanded="true"
+                                                aria-controls="mobilecollapseDrinksCategory">
+                                            Drinks
+                                        </button>
+                                        <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et fugiat officiis eius quibusdam dolor.</span>
+                                    </h2>
+                                    <div id="mobilecollapseDrinksCategory" class="accordion-collapse collapse show"
+                                         data-bs-parent="#mobileaccordionExampleDrinks">
+                                        <div class="accordion-body mobilefood-accordion-body">
+                                            <div class="row align-items-start mobile-fooditem-row clickable-modal">
+                                                <div class="col-9 col-md-9">
+                                                    <div class="food-item-name">
+                                                        <h3>Drinks 1</h3>
+                                                        <p class="food-description"></p>
+                                                        <div class="food-item-price">
+                                                            <p>$ 5.00</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-3 col-md-3">
+                                                    <div class="food-item-image">
+                                                        <img src=""
+                                                             alt="">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row align-items-start mobile-fooditem-row clickable-modal">
+                                                <div class="col-9 col-md-9">
+                                                    <div class="food-item-name">
+                                                        <h3>Drinks 2</h3>
+                                                        <p class="food-description"></p>
+                                                        <div class="food-item-price">
+                                                            <p>$ 5.00</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-3 col-md-3">
+                                                    <div class="food-item-image">
+                                                        <img src=""
+                                                             alt="">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row align-items-start mobile-fooditem-row clickable-modal">
+                                                <div class="col-9 col-md-9">
+                                                    <div class="food-item-name">
+                                                        <h3>Drinks 3</h3>
+                                                        <p class="food-description"></p>
+                                                        <div class="food-item-price">
+                                                            <p>$ 5.00</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-3 col-md-3">
+                                                    <div class="food-item-image">
+                                                        <img src=""
+                                                             alt="">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row align-items-start mobile-fooditem-row clickable-modal">
+                                                <div class="col-9 col-md-9">
+                                                    <div class="food-item-name">
+                                                        <h3>Drinks 4</h3>
+                                                        <p class="food-description"></p>
+                                                        <div class="food-item-price">
+                                                            <p>$ 5.00</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-3 col-md-3">
+                                                    <div class="food-item-image">
+                                                        <img src=""
+                                                             alt="">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                            </div>
+                            <div class="accordion allaccordion-menu-items"
+                                 id="mobileaccordionExampleSoup">
+                                <section class="accordion-item main-menu-all-item" id="mobileSoupButton">
+                                    <h2 class="accordion-header category-accordion-header">
+                                        <button class="accordion-button category-accordionbutton-mobile" type="button"
+                                                data-bs-toggle="collapse"
+                                                data-bs-target="#mobilecollapseSoupCategory" aria-expanded="true"
+                                                aria-controls="mobilecollapseSoupCategory">
+                                            Soup
+                                        </button>
+                                        <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et fugiat officiis eius quibusdam dolor.</span>
+                                    </h2>
+                                    <div id="mobilecollapseSoupCategory" class="accordion-collapse collapse show"
+                                         data-bs-parent="#mobileaccordionExampleSoup">
+                                        <div class="accordion-body mobilefood-accordion-body">
+                                            <div class="row align-items-start mobile-fooditem-row clickable-modal">
+                                                <div class="col-9 col-md-9">
+                                                    <div class="food-item-name">
+                                                        <h3>Soup 1</h3>
+                                                        <p class="food-description"></p>
+                                                        <div class="food-item-price">
+                                                            <p>$ 5.00</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-3 col-md-3">
+                                                    <div class="food-item-image">
+                                                        <img src=""
+                                                             alt="">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row align-items-start mobile-fooditem-row clickable-modal">
+                                                <div class="col-9 col-md-9">
+                                                    <div class="food-item-name">
+                                                        <h3>Soup 2</h3>
+                                                        <p class="food-description"></p>
+                                                        <div class="food-item-price">
+                                                            <p>$ 5.00</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-3 col-md-3">
+                                                    <div class="food-item-image">
+                                                        <img src=""
+                                                             alt="">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row align-items-start mobile-fooditem-row clickable-modal">
+                                                <div class="col-9 col-md-9">
+                                                    <div class="food-item-name">
+                                                        <h3>Soup 3</h3>
+                                                        <p class="food-description"></p>
+                                                        <div class="food-item-price">
+                                                            <p>$ 5.00</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-3 col-md-3">
+                                                    <div class="food-item-image">
+                                                        <img src=""
+                                                             alt="">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row align-items-start mobile-fooditem-row clickable-modal">
+                                                <div class="col-9 col-md-9">
+                                                    <div class="food-item-name">
+                                                        <h3>Soup 4</h3>
+                                                        <p class="food-description"></p>
+                                                        <div class="food-item-price">
+                                                            <p>$ 5.00</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-3 col-md-3">
+                                                    <div class="food-item-image">
+                                                        <img src=""
+                                                             alt="">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                            </div>
+                        </div>
+
+                        <div class="row mt-4">
+                            <div class="col-md-12">
+                                <div class="four-delivery-content" id="mobileBasket">
+                                    <div class="four-dc-item">
+                                        <div class="four-dc-icon">
+                                            <span><i class="fa-solid fa-bicycle"></i></span>
+                                        </div>
+                                        <p>Delivery From: 11:00:00</p>
+                                    </div>
+                                    <div class="four-dc-item">
+                                        <div class="four-dc-icon">
+                                            <span><i class="fa-solid fa-bag-shopping"></i></span>
+                                        </div>
+                                        <p>Collection From: 11:00:00</p>
+                                    </div>
+                                    <div class="four-dc-item">
+                                        <div class="four-dc-icon">
+                                            <span><i class="fa-solid fa-clock"></i></span>
+                                        </div>
+                                        <p>Delivery: 45 Minutes</p>
+                                    </div>
+                                    <div class="four-dc-item">
+                                        <div class="four-dc-icon">
+                                            <span><i class="fa-solid fa-user-clock"></i></span>
+                                        </div>
+                                        <p>
+                                            Collection: 35 Minutes</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="product-offer-box">
+                                <div class="po-box-header">
+                                    <h5><span><i class="fa-solid fa-gift"></i></span>Offers</h5>
+                                </div>
+                                <div class="po-box-body">
+                                    <p>15% off</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="product-busket mobile-product-busket">
+                                <div class="product-busket-heading">
+                                    <div class="busket-title">
+                                        <h5><span><i class="fa-solid fa-basket-shopping"></i></span> Your Basket</h5>
+                                    </div>
+                                    <div class="busket-item">
+                                        <div class="busket-item-box">
+                                            3
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product-busket-body">
+
+                                    <div class="busket-product-item">
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <div class="busket-productitem-title">
+                                                    <h3>Grill Items 1</h3>
+                                                    <div>
+                                                        <p>
+                                                            <small>- Pepsi</small>
+                                                        </p>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12">
+                                                <div class="busket-productitem-comment">
+                                                    <input type="text" class="form-control product-comment-formcontrol"
+                                                           placeholder="Enter comment(if any)">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12">
+                                                <div class="busket-productitem-action">
+                                                    <div class="busket-product-quantity">
+                                                        <div class="quantityincrease">
+                                                            <button class="btn mainbtn-primary quantitybtn">
+                                                                <span><i class="fa-solid fa-minus"></i></span>
+                                                            </button>
+                                                            <input type="number" class="form-control quantityfield"
+                                                                   placeholder="0">
+                                                            <button class="btn mainbtn-primary quantitybtn">
+                                                                <span><i class="fa-solid fa-plus"></i></span>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                    <div class="busket-product-action">
+                                                        <div class="busket-product-price">
+                                                            $ 3.30
+                                                        </div>
+                                                        <div class="p-action">
+                                                            <span><i class="fa-solid fa-trash"></i></span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="busket-product-item">
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <div class="busket-productitem-title">
+                                                    <h3>Burger 2</h3>
+                                                    <div>
+                                                        <p>
+                                                            <small>- Potato Fries</small>
+                                                        </p>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12">
+                                                <div class="busket-productitem-comment">
+                                                    <input type="text" class="form-control product-comment-formcontrol"
+                                                           placeholder="Enter comment(if any)">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12">
+                                                <div class="busket-productitem-action">
+                                                    <div class="busket-product-quantity">
+                                                        <div class="quantityincrease">
+                                                            <button class="btn mainbtn-primary quantitybtn">
+                                                                <span><i class="fa-solid fa-minus"></i></span>
+                                                            </button>
+                                                            <input type="number" class="form-control quantityfield"
+                                                                   placeholder="0">
+                                                            <button class="btn mainbtn-primary quantitybtn">
+                                                                <span><i class="fa-solid fa-plus"></i></span>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                    <div class="busket-product-action">
+                                                        <div class="busket-product-price">
+                                                            $ 5.30
+                                                        </div>
+                                                        <div class="p-action">
+                                                            <span><i class="fa-solid fa-trash"></i></span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="busket-product-item">
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <div class="busket-productitem-title">
+                                                    <h3>Rice Items 3</h3>
+                                                    <div>
+                                                        <p>
+                                                            <small>- Chicken</small>
+                                                            <br>
+                                                            <small>- Pepsi</small>
+                                                        </p>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12">
+                                                <div class="busket-productitem-comment">
+                                                    <input type="text" class="form-control product-comment-formcontrol"
+                                                           placeholder="Enter comment(if any)">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12">
+                                                <div class="busket-productitem-action">
+                                                    <div class="busket-product-quantity">
+                                                        <div class="quantityincrease">
+                                                            <button class="btn mainbtn-primary quantitybtn">
+                                                                <span><i class="fa-solid fa-minus"></i></span>
+                                                            </button>
+                                                            <input type="number" class="form-control quantityfield"
+                                                                   placeholder="0">
+                                                            <button class="btn mainbtn-primary quantitybtn">
+                                                                <span><i class="fa-solid fa-plus"></i></span>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                    <div class="busket-product-action">
+                                                        <div class="busket-product-price">
+                                                            $ 3.30
+                                                        </div>
+                                                        <div class="p-action">
+                                                            <span><i class="fa-solid fa-trash"></i></span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="busket-subtotal">
+                                        <div class="subtotal-amount">
+                                            <p>Sub Total : <span>$ 3.30</span></p>
+                                        </div>
+                                    </div>
+                                    <div class="busket-product-commentbox">
+                                        <label><span><i class="fa-solid fa-comment"></i></span>Comment</label>
+                                        <textarea name="" id="" cols="30" rows="3"
+                                                  class="form-control comment-textarea-formcontrol"
+                                                  placeholder="Write your comment here (if any)"></textarea>
+                                    </div>
+                                    <div class="checkout-button text-center mt-0 pb-3">
+                                        <a href="#" class="btn mainbtn-primary busketcheckoutbtn">Checkout</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="mobile-cart-checkout">
+                                <div class="mobile-cart-checkout-hold">
+                                    <div class="row align-items-center">
+                                        <div class="col-6">
+                                            <div class="mobile-basket-button">
+                                                <a href="#mobileBasket">View Basket (3)</a>
+                                            </div>
+                                        </div>
+                                        <div class="col-6">
+                                            <div class="mobile-checkout-button">
+                                                <a href="#">Go to Checkout</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="mobile-separator"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer Section -->
+    <section class="all-footer-section">
+        <!-- Footer Upper section -->
+        <section class="footer-section" id="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-5">
+                        <div class="footer-logo">
+                            <img src="../images/self-logo.png" alt="">
+                        </div>
+                        <div class="footer-details">
+                            <div class="footer-opening-time">
+                                <h5>Opening Times</h5>
+                                <p>Everyday : <span>10:00AM - 11:00PM</span></p>
+                            </div>
+                            <div class="footer-all-contactifo footer-large-device">
+                                <div class="footer-contact-info">
+                                    <div class="contact-icon">
+                                        <span><i class="fa-solid fa-phone"></i></span>
+                                    </div>
+                                    <div class="contact-details">
+                                        <a href="#">+880 1234 567890</a>
+                                    </div>
+                                </div>
+                                <div class="footer-contact-info">
+                                    <div class="contact-icon">
+                                        <span><i class="fa-solid fa-envelope"></i></span>
+                                    </div>
+                                    <div class="contact-details">
+                                        <a href="#">info_restaurant@email.com</a>
+                                    </div>
+                                </div>
+                                <div class="footer-contact-info">
+                                    <div class="contact-icon">
+                                        <span><i class="fa-solid fa-location-dot"></i></span>
+                                    </div>
+                                    <div class="contact-details">
+                                        <a href="#" target="_blank">House #1, Block - A, Road #1, Malibagh, Dhaka.</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="footer-contactifo-accordion footer-mobile-device">
+                                <div class="accordion" id="footerContactInfo">
+                                    <div class="accordion-item footer-accordion-item">
+                                        <h2 class="accordion-header">
+                                            <button class="accordion-button footer-accordion-button collapsed" type="button"
+                                                    data-bs-toggle="collapse" data-bs-target="#footerContactLink"
+                                                    aria-expanded="true" aria-controls="footerContactLink">
+                                                Our Contact Information
+                                            </button>
+                                        </h2>
+                                        <div id="footerContactLink" class="accordion-collapse collapse"
+                                             data-bs-parent="#footerContactInfo">
+                                            <div class="accordion-body footer-accordion-body">
+                                                <div>
+                                                    <div class="footer-contact-info">
+                                                        <div class="contact-icon">
+                                                            <span><i class="fa-solid fa-phone"></i></span>
+                                                        </div>
+                                                        <div class="contact-details mobile-contact-details">
+                                                            <a href="#">+880 1234 567890</a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="footer-contact-info">
+                                                        <div class="contact-icon">
+                                                            <span><i class="fa-solid fa-envelope"></i></span>
+                                                        </div>
+                                                        <div class="contact-details mobile-contact-details">
+                                                            <a href="#">info_restaurant@email.com</a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="footer-contact-info">
+                                                        <div class="contact-icon">
+                                                            <span><i class="fa-solid fa-location-dot"></i></span>
+                                                        </div>
+                                                        <div class="contact-details mobile-contact-details">
+                                                            <a href="#" target="_blank">House #1, Block - A, Road #1, Malibagh, Dhaka.</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="footer-large-device">
+                            <div class="footer-links-title">
+                                <h3>Useful Links</h3>
+                            </div>
+                            <div class="footer-useful-link">
+                                <ul>
+                                    <li>
+                                        <div class="footer-link-icon">
+                                            <span><i class="fa-solid fa-caret-right"></i></span>
+                                        </div>
+                                        <div class="footer-link-content">
+                                            <a href="/about-us">About Us</a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="footer-link-icon">
+                                            <span><i class="fa-solid fa-caret-right"></i></span>
+                                        </div>
+                                        <div class="footer-link-content">
+                                            <a href="/contact-us">Contact Us</a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="footer-link-icon">
+                                            <span><i class="fa-solid fa-caret-right"></i></span>
+                                        </div>
+                                        <div class="footer-link-content">
+                                            <a href="#">Download Menu</a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="footer-link-icon">
+                                            <span><i class="fa-solid fa-caret-right"></i></span>
+                                        </div>
+                                        <div class="footer-link-content">
+                                            <a href="ourmenu.html">Order Now</a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="footer-mobile-device mt-3">
+                            <div class="accordion" id="accordionUsefulLink">
+                                <div class="accordion-item footer-accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button footer-accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#usefulLinks" aria-expanded="true"
+                                                aria-controls="usefulLinks">
+                                            Useful Links
+                                        </button>
+                                    </h2>
+                                    <div id="usefulLinks" class="accordion-collapse collapse"
+                                         data-bs-parent="#accordionUsefulLink">
+                                        <div class="accordion-body footer-accordion-body">
+                                            <div class="footer-useful-link mobilefooter-useful-link">
+                                                <ul>
+                                                    <li>
+                                                        <div class="footer-link-icon mobilefooter-link-icon">
+                                                            <span><i class="fa-solid fa-caret-right"></i></span>
+                                                        </div>
+                                                        <div class="footer-link-content mobilefooter-link-content">
+                                                            <a href="/about-us">About Us</a>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="footer-link-icon mobilefooter-link-icon">
+                                                            <span><i class="fa-solid fa-caret-right"></i></span>
+                                                        </div>
+                                                        <div class="footer-link-content mobilefooter-link-content">
+                                                            <a href="/contact-us">Contact Us</a>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="footer-link-icon mobilefooter-link-icon">
+                                                            <span><i class="fa-solid fa-caret-right"></i></span>
+                                                        </div>
+                                                        <div class="footer-link-content mobilefooter-link-content">
+                                                            <a href="">Download Menu</a>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="footer-link-icon mobilefooter-link-icon">
+                                                            <span><i class="fa-solid fa-caret-right"></i></span>
+                                                        </div>
+                                                        <div class="footer-link-content mobilefooter-link-content">
+                                                            <a href="../views/ourmenu.html">Order Now</a>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="footer-links-title">
+                                <h3>Follow Us</h3>
+                            </div>
+                            <div class="footer-social-link">
+                                <ul>
+                                    <li>
+                                        <a href="#"><span><i class="fa-brands fa-facebook-f"></i></span></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><span><i class="fa-brands fa-twitter"></i></span></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><span><i class="fa-brands fa-linkedin-in"></i></span></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><span><i class="fa-brands fa-instagram"></i></span></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="footer-contactform">
+                            <div class="subscribe-title">
+                                <p>Subscribe to Our Newsletter</p>
+                            </div>
+                            <form>
+                                <div class="mb-3">
+                                    <input type="email" class="form-control footer-formcontrol" placeholder="Email Address" required>
+                                </div>
+                                <button type="submit" class="btn footer-formbtn">Subscribe</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-learnmore-links">
+                    <div class="footer-large-device">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="row">
+                                    <div class="col-md-12 m-auto">
+                                        <div class="separator"></div>
+                                    </div>
+                                </div>
+                                <div class="row align-items-center">
+                                    <div class="col-md-6 col-lg-7 m-auto">
+                                        <div class="learn-more-link">
+                                            <ul>
+                                                <li><a href="#">Terms & Conditions</a></li>
+                                                <li><a href="#">FAQs</a></li>
+                                                <li><a href="#">Privacy Policy</a></li>
+                                                <li><a href="#">Refund Policy</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12 m-auto">
+                                        <div class="separator"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer-mobile-device">
+                        <div class="row">
+                            <div class="col-12">
+                                <h6 class="footerlearn-more-title">Lean More</h6>
+                            </div>
+                            <div class="col-6 m-auto">
+                                <div class="footermobile-learnmore-links">
+                                    <a href="#" class="btn fm-lm-linkbtn">Terms & Conditions</a>
+                                </div>
+                            </div>
+                            <div class="col-6 m-auto">
+                                <div class="footermobile-learnmore-links">
+                                    <a href="#" class="btn fm-lm-linkbtn">FAQs</a>
+                                </div>
+                            </div>
+                            <div class="col-6 m-auto">
+                                <div class="footermobile-learnmore-links">
+                                    <a href="#" class="btn fm-lm-linkbtn">Privacy Policy</a>
+                                </div>
+                            </div>
+                            <div class="col-6 m-auto">
+                                <div class="footermobile-learnmore-links">
+                                    <a href="#" class="btn fm-lm-linkbtn">Refund Policy</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Footer Bottom Section -->
+        <section class="footer-bottom-section">
+            <div class="container">
+                <div class="row align-items-center mobile-footerbottom-row">
+                    <div class="col-md-5 col-lg-5">
+                        <div class="footer-copyright">
+                            <p><span><i class="fa-regular fa-copyright"></i></span>Copyright <a href="https://abukaiser.com/" target="_blank">Abu Kaiser</a>. All right Reserved 2023.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-7 col-lg-7">
+                        <div class="payment-option">
+                            <div class="payment">
+                                <div class="payment-with d-flex align-items-center">
+                                    <span><i class="fa-solid fa-lock"></i></span>
+                                    <p>Pay Securely with</p>
+                                </div>
+                            </div>
+                            <div class="payment-method">
+                                <div class="payment">
+                                    <div class="payment-method-logo">
+                                        <img src="../images/payment-logo/visa.jpg" alt=""/>
+                                    </div>
+                                </div>
+                                <div class="payment">
+                                    <div class="payment-method-logo">
+                                        <img src="../images/payment-logo/mastercard.jpg" alt=""/>
+                                    </div>
+                                </div>
+                                <div class="payment">
+                                    <div class="payment-method-logo">
+                                        <img src="../images/payment-logo/Amex.jpg" alt=""/>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+
+    <!-- Menu Component & Sub Component Modal Start -->
+    <div class="modal fade" id="subItemModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="subItemModalLabel" aria-hidden="true">
+       <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+           <div class="modal-content food-subItem-content">
+               <div class="modal-header foodsubitem-modal-header">
+                   <h1 class="modal-title" id="subItemModalLabel">Product Name</h1>
+                   <button type="button" class="btn-close subitem-modal-closebtn" data-bs-dismiss="modal"
+                           aria-label="Close"></button>
+               </div>
+               <div class="modal-body foodsubitem-modal-body subitem-modal-body">
+                   <div class="row mb-2">
+                       <div class="col-md-12">
+                           <div class="row">
+                               <div class="col-6 col-md-4 m-auto">
+                                   <div class="foodsubitem-modal-image">
+                                       <img src="" alt="">
+                                   </div>
+                               </div>
+                           </div>
+                           <div class="row mt-2">
+                               <div class="col-10 col-md-9 m-auto text-center">
+                                   <div class="foodsubitem-price">
+                                       <p><span>Price:</span> £ 3.30
+                                       </p>
+                                   </div>
+                                   <div class="foodsubitem-description">
+                                       <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto hic rem dolorem.</div>
+                                   </div>
+                               </div>
+                           </div>
+                       </div>
+                   </div>
+
+                   <!-- One OF relation -->
+                   <div class="row">
+                       <div class="col-12">
+                           <div class="fooditem-modal-header">
+                               <h3>Choose One</h3>
+                           </div>
+                       </div>
+                       <div class="col-12">
+                           <div class="row foodsubitem-content-row">
+                               <div class="col-6 col-md-4">
+                                   <div class="sub-item-content">
+                                       <div class="sub-item-formcheck" data-bs-toggle="modal" data-bs-target="#subComponentModal">
+                                           <input class="form-check-input sub-item-selectcheck" type="radio"
+                                                  name="" id=""
+                                                  value="">
+                                           <label class="subitem-label">
+                                               <div>
+                                                   <p>Meal Deal (Chips)</p>
+                                                   <br>
+                                                   <small>+£2.50</small>
+                                               </div>
+                                               <div class="subcomponent-add-icon">
+                                                   <span><i class="fa-solid fa-plus"></i></span>
+                                               </div>
+                                           </label>
+                                       </div>
+                                   </div>
+                               </div>
+                               <div class="col-6 col-md-4">
+                                <div class="sub-item-content">
+                                    <div class="sub-item-formcheck" data-bs-toggle="modal" data-bs-target="#subComponentModal">
+                                        <input class="form-check-input sub-item-selectcheck" type="radio"
+                                               name="" id=""
+                                               value="">
+                                        <label class="subitem-label">
+                                            <div>
+                                                <p>Meal Deal (Rice)</p>
+                                                <br>
+                                                <small>+£3.00</small>
+                                            </div>
+                                            <div class="subcomponent-add-icon">
+                                                <span><i class="fa-solid fa-plus"></i></span>
+                                            </div>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+
+                               <div class="col-12 subcomponent-selected-item">
+                                   <span>Rubican Mango</span>
+                               </div>
+                           </div>
+                       </div>
+                   </div>
+
+                   <div class="row">
+                    <div class="col-12">
+                        <div class="fooditem-modal-header">
+                            <h3>Flavours</h3>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="row foodsubitem-content-row">
+                            <div class="col-6 col-md-4">
+                                <div class="sub-item-content">
+                                    <div class="sub-item-formcheck">
+                                        <input class="form-check-input sub-item-selectcheck" type="radio"
+                                               name="" id=""
+                                               value=""
+                                               data-bs-toggle="modal" data-bs-target="#subComponentModal">
+                                        <label class="subitem-label">
+                                            <div>
+                                                <p>Peri Peri</p>
+                                            </div>
+                                            <div class="subcomponent-add-icon">
+                                                <span><i class="fa-solid fa-plus"></i></span>
+                                            </div>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-4">
+                                <div class="sub-item-content">
+                                    <div class="sub-item-formcheck">
+                                        <input class="form-check-input sub-item-selectcheck" type="radio"
+                                               name="" id=""
+                                               value=""
+                                               data-bs-toggle="modal" data-bs-target="#subComponentModal">
+                                        <label class="subitem-label">
+                                            <div>
+                                                <p>BBQ</p>
+                                            </div>
+                                            <div class="subcomponent-add-icon">
+                                                <span><i class="fa-solid fa-plus"></i></span>
+                                            </div>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                   
+                   <div class="row">
+                       <div class="col-12 mt-2">
+                           <div class="fooditem-modal-header">
+                               <h3>Extra</h3>
+                           </div>
+                       </div>
+                       <div class="col-12 col-md-12 foodextra-col">
+                           <div class="sub-item-extra-content">
+                               <div class="form-check d-flex align-items-center justify-content-between">
+                                   <div>
+                                       <input class="form-check-input form-extraitem-check" type="checkbox"
+                                              value=""
+                                              name=""
+                                              id="extraItems"
+                                       >
+                                       <label class="form-check-label form-extraitem-label"
+                                              for="extraItems">
+                                           Mayonnaise Dips
+                                       </label>
+                                   </div>
+                                   <div>
+                                       <p>+£0.20</p>
+                                   </div>
+                               </div>
+                               <div class="quantityincrease mobile-extraitem-quantity">
+                                    <button class="btn mainbtn-primary quantitybtn">
+                                        <span><i class="fa-solid fa-minus"></i></span>
+                                    </button>
+                                    <input type="number" class="form-control quantityfield" placeholder="0" step="1" min="0" max="10" readonly>
+                                    <button class="btn mainbtn-primary quantitybtn">
+                                        <span><i class="fa-solid fa-plus"></i></span>
+                                    </button>
+                               </div>
+                           </div>
+                           <div class="sub-item-extra-content">
+                            <div class="form-check d-flex align-items-center justify-content-between">
+                                <div>
+                                    <input class="form-check-input form-extraitem-check" type="checkbox"
+                                           value=""
+                                           name=""
+                                           id="extraItems"
+                                    >
+                                    <label class="form-check-label form-extraitem-label"
+                                           for="extraItems">
+                                        Chilli Dips
+                                    </label>
+                                </div>
+                                <div>
+                                    <p>+£0.20</p>
+                                </div>
+                            </div>
+                            <div class="quantityincrease mobile-extraitem-quantity">
+                                 <button class="btn mainbtn-primary quantitybtn">
+                                     <span><i class="fa-solid fa-minus"></i></span>
+                                 </button>
+                                 <input type="number" class="form-control quantityfield" placeholder="0" step="1" min="0" max="10" readonly>
+                                 <button class="btn mainbtn-primary quantitybtn">
+                                     <span><i class="fa-solid fa-plus"></i></span>
+                                 </button>
+                            </div>
+                        </div>
+                       </div>
+                   </div>
+
+                   <div class="row">
+                       <div class="col-md-12">
+                           <div class="comment-area">
+                               <textarea class="form-control modal-text-form-control" cols="30" rows="3"
+                                         placeholder="Special instructions (if any)"></textarea>
+                           </div>
+                       </div>
+                   </div>
+
+               </div>
+               <div class="modal-footer sub-item-modal-footer foodsubitem-modal-footer">
+                   <div class="row">
+                       <div class="col-md-12">
+                           <button type="button" class="btn btn-secondary me-2" data-bs-dismiss="modal">Close</button>
+                           <button type="button" class="btn mainbtn-primary pointer-event subitem-cartadd-btn">£3.30 Add to Cart</button>
+                       </div>
+                   </div>
+               </div>
+           </div>
+       </div>
+    </div>
+
+    <div class="modal fade subcomponent-modal" id="subComponentModal" data-bs-backdrop="static" data-bs-keyboard="false"
+        tabindex="-1" aria-labelledby="subComponentModalLabel"
+        aria-hidden="true">
+       <div class="modal-dialog modal-dialog-centered">
+           <div class="modal-content food-subItem-content food-subcomponent-content">
+               <div class="modal-header foodsubitem-modal-header">
+                   <h1 class="modal-title" id="subComponentModalLabel">Product Name</h1>
+                   <button type="button" class="btn-close subitem-modal-closebtn" data-bs-dismiss="modal"
+                           aria-label="Close"></button>
+               </div>
+               <div class="modal-body foodsubitem-modal-body">
+                   <div class="row">
+                       <div class="col-12">
+                           <div class="fooditem-modal-header">
+                               <h3>Options</h3>
+                           </div>
+                       </div>
+                       <div class="col-12">
+                           <div class="row foodsubitem-content-row">
+                               <div class="col-6 col-md-4">
+                                   <div class="sub-item-content">
+                                       <div class="sub-item-formcheck">
+                                           <input class="form-check-input sub-item-selectcheck" type="radio"
+                                                  name="" 
+                                                  id="RubicanMango"
+                                                  value=""
+                                                  >
+                                           <label class="subitem-label"
+                                                  for="RubicanMango">
+                                               <p>Rubican Mango</p>
+                                           </label>
+                                       </div>
+                                   </div>
+                               </div>
+                               <div class="col-6 col-md-4">
+                                <div class="sub-item-content">
+                                    <div class="sub-item-formcheck">
+                                        <input class="form-check-input sub-item-selectcheck" type="radio"
+                                               name="" 
+                                               id="RubicanMango"
+                                               value=""
+                                               >
+                                        <label class="subitem-label"
+                                               for="RubicanMango">
+                                            <p>Mirianda Orange</p>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-4">
+                                <div class="sub-item-content">
+                                    <div class="sub-item-formcheck">
+                                        <input class="form-check-input sub-item-selectcheck" type="radio"
+                                               name="" 
+                                               id="RubicanMango"
+                                               value=""
+                                               >
+                                        <label class="subitem-label"
+                                               for="RubicanMango">
+                                            <p>Mirianda Strawberry</p>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-4">
+                                <div class="sub-item-content">
+                                    <div class="sub-item-formcheck">
+                                        <input class="form-check-input sub-item-selectcheck" type="radio"
+                                               name="" 
+                                               id="RubicanMango"
+                                               value=""
+                                               >
+                                        <label class="subitem-label"
+                                               for="RubicanMango">
+                                            <p>7 up</p>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                           </div>
+                       </div>
+                   </div>
+               </div>
+               <div class="modal-footer sub-item-modal-footer">
+                   <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Okay</button>
+               </div>
+           </div>
+       </div>
+    </div>
+    <!-- Menu Component & Sub Component Modal End -->
+
+    <!-- Location Modal -->
+    <div class="modal fade" id="shopModal" tabindex="-1" aria-labelledby="shopModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header location-modal-header">
+                    <h1 class="modal-title location-modal-title" id="locationModalLabel">Our Restaurant</h1>
+                </div>
+                <form>
+                    <div class="modal-body location-modal-body">
+                        <div class="location-body-content">
+                            <div class="row">
+                                <div class="col-12 col-md-7 m-auto">
+                                    <div class="location-modal-image">
+                                        <img src="../images/about.jpg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row align-items-center mt-3">
+                                    <div class="col-12 col-md-5">
+                                            <label for="payment_type" class="location-formlabel"><span><i class="fa-solid fa-location-dot"></i></span>OrderLocation</label>
+                                    </div>
+                                <div class="col-12 col-md-7 m-auto">
+                                    <div class="col-alignment">
+                                        <select name="branch" id="branch" class="form-control location-form-select">
+                                            <option value="">Select Shop</option>
+                                            <option value="1">Dhaka</option>
+                                            <option value="2">Khulna</option>
+                                            <option value="3">Cox's Bazar</option>
+                                        </select>
+        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer location-modal-footer">
+                        <button type="button" class="btn btn-secondary location-modal-close" data-bs-dismiss="modal">Back</button>
+                        <button type="submit" class="btn mainbtn-primary location-modal-close">Change</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Javascript Links -->
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js"></script>
+    <script src="../js/owl.carousel.min.js"></script>
+    <script src="../js/slick.min.js"></script>
+    <!-- Header JS -->
+    <script src="../js/header.js"></script>
+    <!-- Menu JS -->
+    <script src="../js/menu.js"></script>
+    <script>
+        var owl = $(".owl-carousel");
+        owl.owlCarousel({
+            loop: false,
+            // margin: 125,
+            autoWidth: true,
+            autoplay: false,
+            autoplayTimeout: 15000,
+            stagePadding: 0,
+            nav: false,
+            dots: false,
+            center: false,
+            responsiveClass: true,
+            responsive: {
+                0: {
+                    items: 3
+                },
+                600: {
+                    items: 3
+                },
+                1000: {
+                    items: 3
+                }
+            }
+        });
+    </script>
+</body>
+</html>

@@ -73,7 +73,7 @@
                                         <a class="nav-link header-navlink" aria-current="page" href="/">Home</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link header-navlink" href="/menu">Order Now</a>
+                                        <a class="nav-link header-navlink" href="./assets/views/ourmenu.html">Order Now</a>
                                     </li>
                                     <li class="nav-item">
                                         <a class="nav-link header-navlink" href="/contact-us">Contact Us</a>
@@ -144,7 +144,7 @@
             </div>
         </section>
         <!-- Header For Food Website Mobile Device Menu and Location Button Panel-->
-        <section class="mobile-header-section mobile-header-navsection header-mobile-device">
+        <section class="mobile-header-section mobile-header-navsection header-mobile-device" id="HeaderMobileSticky">
             <div class="mobile-header-menu">
                 <div class="container">
                     <div class="mobile-header-option">
@@ -161,7 +161,7 @@
                                             <a class="nav-link mobileheader-navlink active" aria-current="page" href="/"><span><i class="fa-solid fa-angles-right"></i></span> Home</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link mobileheader-navlink" href="/menu"><span><i class="fa-solid fa-angles-right"></i></span> Order Now</a>
+                                            <a class="nav-link mobileheader-navlink" href="./assets/views/ourmenu.html"><span><i class="fa-solid fa-angles-right"></i></span> Order Now</a>
                                         </li>
                                         <li class="nav-item">
                                             <a class="nav-link mobileheader-navlink" href="#"><span><i class="fa-solid fa-angles-right"></i></span> Download Menu</a>
@@ -315,7 +315,7 @@
         </div>
     </section>
     <!-- About Section -->
-    <section class="about-section" id="aboutUs"
+    <section class="about-section" id="aboutUs">
         <div class="about-overlay"></div>
         <div class="container">
             <div class="about-content-details">
@@ -374,7 +374,7 @@
                                             </div>
                                             <p>Free Shipping/ Online Offer</p>
                                             <div class="op-button">
-                                                <a href="/menu" class="btn mainbtn-primary op-btn">Order Now</a>
+                                                <a href="./assets/views/ourmenu.html" class="btn mainbtn-primary op-btn">Order Now</a>
                                             </div>
                                         </div>
                                     </div>
@@ -547,7 +547,7 @@
                                                     <p>£ 3.30</p>
                                                 </div>
                                                 <div class="offer-product-button">
-                                                    <a href="/menu" class="btn mainbtn-primary fw-btn">Order Now</a>
+                                                    <a href="./assets/views/ourmenu.html" class="btn mainbtn-primary fw-btn">Order Now</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -577,7 +577,7 @@
                                                     <p>£ 3.30</p>
                                                 </div>
                                                 <div class="offer-product-button">
-                                                    <a href="/menu" class="btn mainbtn-primary fw-btn">Order Now</a>
+                                                    <a href="./assets/views/ourmenu.html" class="btn mainbtn-primary fw-btn">Order Now</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -607,7 +607,7 @@
                                                     <p>£ 3.30</p>
                                                 </div>
                                                 <div class="offer-product-button">
-                                                    <a href="/menu" class="btn mainbtn-primary fw-btn">Order Now</a>
+                                                    <a href="./assets/views/ourmenu.html" class="btn mainbtn-primary fw-btn">Order Now</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -637,7 +637,7 @@
                                                     <p>£ 3.30</p>
                                                 </div>
                                                 <div class="offer-product-button">
-                                                    <a href="/menu" class="btn mainbtn-primary fw-btn">Order Now</a>
+                                                    <a href="./assets/views/ourmenu.html" class="btn mainbtn-primary fw-btn">Order Now</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -667,7 +667,7 @@
                                                     <p>£ 3.30</p>
                                                 </div>
                                                 <div class="offer-product-button">
-                                                    <a href="/menu" class="btn mainbtn-primary fw-btn">Order Now</a>
+                                                    <a href="./assets/views/ourmenu.html" class="btn mainbtn-primary fw-btn">Order Now</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -994,7 +994,7 @@
                                             <span><i class="fa-solid fa-caret-right"></i></span>
                                         </div>
                                         <div class="footer-link-content">
-                                            <a href="/menu">Order Now</a>
+                                            <a href="./assets/views/ourmenu.html">Order Now</a>
                                         </div>
                                     </li>
                                 </ul>
@@ -1044,7 +1044,7 @@
                                                             <span><i class="fa-solid fa-caret-right"></i></span>
                                                         </div>
                                                         <div class="footer-link-content mobilefooter-link-content">
-                                                            <a href="/menu">Order Now</a>
+                                                            <a href="./assets/views/ourmenu.html">Order Now</a>
                                                         </div>
                                                     </li>
                                                 </ul>
@@ -1241,9 +1241,10 @@
     <script src="./assets/js/slick.min.js"></script>
     <!-- Header JS -->
     <script src="./assets/js/header.js"></script>
-    <!-- Offer Product Slider -->
+    <!-- Slider Script -->
     <script>
-        $('.offerproduct-slider').slick({
+    // Offer Product Slider
+    $('.offerproduct-slider').slick({
             dots: false,
             arrows: true,
             slidesToShow: 1,
@@ -1277,7 +1278,8 @@
             //     }
             // ]
         });
-        $('.foodweek-slider').slick({
+    // Food of the Week Slider
+    $('.foodweek-slider').slick({
             dots: false,
             arrows: true,
             slidesToShow: 3,
@@ -1318,7 +1320,8 @@
                 }
             ]
         });
-        $('.client-review-slider').slick({
+    // Testimonial / Client Review Slider
+    $('.client-review-slider').slick({
             dots: true,
             arrows: true,
             slidesToShow: 3,
@@ -1358,7 +1361,6 @@
                 }
             ]
         });
-    </script>
     </script>
 </body>
 </html>
