@@ -416,6 +416,7 @@ ul {
     right: 0;
     border-bottom: 5px solid #ff9900;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 10px 15px;
+    z-index: 10;
 }
 /* .mobileheader-collapse-btn{
     display: block;
@@ -461,14 +462,6 @@ ul {
     text-align: center;
     margin-top: 15px;
 }
-/* .headerlocation-collapseHidden{
-    display: none;
-    transition: .5s all ease-in-out;
-}
-.headerlocation-collapseVisible{
-    display: block;
-    transition: .5s all ease-in-out;
-} */
 .headerlocation-collapse-openingtime h5{
     font-size: 18px;
     font-weight: 700;
@@ -484,6 +477,9 @@ ul {
     font-weight: 600;
     border-bottom: 0;
     margin-bottom: 5px;
+}
+.mobileheader-all-navcontent{
+    position: relative;
 }
 /* Header Section CSS End */
 /* Banner Section CSS Start */
@@ -526,10 +522,10 @@ ul {
     border-radius: 50px;
     padding: 14px 20px;
     padding-right: 55px;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 5px 15px;
 }
 .banner-s-field:focus {
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 5px 15px;
 }
 .banner-s-field::placeholder {
     color: #a8a8a8;
@@ -543,7 +539,7 @@ ul {
     background-color: #ff9900;
     color: #fff;
     border-radius: 50px;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
     width: 40px;
     height: 40px;
 }
@@ -1429,6 +1425,14 @@ font-size: 18px;
 .footer-bottom-section {
     background-color: #f3f3f3;
     padding: 15px 0;
+}
+.footer-copyright p a{
+    color: #ff9900;
+    font-weight: 600;
+}
+.footer-copyright p a:hover{
+    color: #ff9900;
+    text-decoration: underline;
 }
 .footer-copyright span svg {
     margin-right: 8px;

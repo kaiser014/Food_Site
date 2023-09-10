@@ -1,0 +1,1169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!-- Font Awesome CDN Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Slick Slider -->
+    <link rel="stylesheet" href="../css/slick.css">
+    <!-- Owl Carousal Link -->
+    <link rel="stylesheet" href="../css/owl.carousel.css">
+    <!-- Bootstrap CDN Link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Main CSS File -->
+    <link rel="stylesheet" href="../css/checkout.css">
+    <link rel="stylesheet" href="../css/menu.css">
+    <link rel="stylesheet" href="../css/locationModal.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <title>Food Site</title>
+</head>
+<body>
+    <!-- Header Section -->
+    <section class="header-all-section">
+        <!-- Top Header For Food Website -->
+        <section class="top-header-section header-large-device">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-3 col-sm-6 col-md-6">
+                        <div class="topheader-social-icon">
+                            <ul>
+                                <li><a href="#"><span><i class="fa-brands fa-facebook-f"></i></span></a></li>
+                                <li><a href="#"><span><i class="fa-brands fa-twitter"></i></span></a></li>    
+                                <li><a href="#"><span><i class="fa-brands fa-linkedin-in"></i></span></a></li>
+                                <li><a href="#"><span><i class="fa-brands fa-instagram"></i></span></a></li>    
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-9 col-sm-6 col-md-6">
+                        <div class="top-header-links">
+                            <ul>
+                                <li>
+                                    <p class="topheader-shoplocation me-2">Shop:</p>
+                                </li>
+                                <li>
+                                    <div class="top-header-shop-location">
+                                        <select name="shop" id="shop" class="form-control form-control-sm">
+                                            <option value="">Select Shop</option>
+                                                <option value="1">Dhaka</option>
+                                                <option value="2">Khulna</option>
+                                                <option value="3">Cox's Bazar</option>
+                                        </select>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Header For Food Website Large Device-->
+        <section class="header-section header-large-device">
+            <div class="container">
+                <div class="" id="headerLarge">
+                    <nav class="navbar navbar-expand-lg">
+                        <div class="container-fluid">
+                            <a class="navbar-brand header-logo" href="/">
+                                <img src="../images/self-logo.png" alt="Logo">
+                            </a>
+                            <div class="collapse navbar-collapse">
+                                <ul class="navbar-nav header-navbar-nav m-auto mb-2 mb-lg-0">
+                                    <li class="nav-item">
+                                        <a class="nav-link header-navlink" aria-current="page" href="/">Home</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link header-navlink" href="./ourmenu.html">Order Now</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link header-navlink" href="./contact_us.html">Contact Us</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- Account Button -->
+                            <!-- <div class="header-button">
+                                <div class="dropdown">
+                                    <button class="btn mainbtn-primary account-btn dropdown-toggle" type="button"
+                                            data-bs-toggle="dropdown" aria-expanded="false">
+                                        <span><i class="fa-solid fa-user"></i></span>Account
+                                    </button>
+                                    <ul class="dropdown-menu accountbtn-dropdown-menu">
+                                        <li><a class="dropdown-item account-btn-item" href="/profile/details"><span><i
+                                                        class="fa-solid fa-user"></i></span>My Account</a></li>
+                                        <li><a class="dropdown-item account-btn-item" href="/profile/order"><span><i
+                                                        class="fa-solid fa-box"></i></span>My Order</a></li>
+                                        <li><a class="dropdown-item account-btn-item" data-bs-toggle="modal"
+                                               data-bs-target="#logoutModal" href="#"><span><i
+                                                        class="fa-solid fa-right-from-bracket"></i></span>Logout</a></li>
+                                    </ul>
+                                </div>
+                            </div> -->
+                            <div class="header-button">
+                                <a href="/login" class="btn mainbtn-primary login-btn">Login</a>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </section>
+        <!-- Header For Food Website Mobile Device Logo and Login Panel-->
+        <section class="mobile-header-section header-mobile-device">
+            <div class="mobile-header">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-7">
+                            <div class="mobileheader-logo">
+                                <a href="/"><img src="../images/self-logo.png" alt="Logo"></a>
+                            </div>
+                        </div>
+                        <div class="col-5">
+                            <!-- Account Button -->
+                            <!-- <div class="mobileheader-button">
+                                <div class="dropdown">
+                                    <button class="btn mainbtn-primary account-btn mobileaccount-btn dropdown-toggle"
+                                            type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        <span><i class="fa-solid fa-user"></i></span>
+                                    </button>
+                                    <ul class="dropdown-menu accountbtn-dropdown-menu mobileaccountbtn-dropdown-menu">
+                                        <li><a class="dropdown-item account-btn-item" href="/profile/details"><span><i
+                                                        class="fa-solid fa-user"></i></span>My Account</a></li>
+                                        <li><a class="dropdown-item account-btn-item" href="/profile/order"><span><i
+                                                        class="fa-solid fa-box"></i></span>My Order</a></li>
+                                        <li><a class="dropdown-item account-btn-item" data-bs-toggle="modal"
+                                               data-bs-target="#logoutModal" href="#"><span><i
+                                                        class="fa-solid fa-right-from-bracket"></i></span>Logout</a></li>
+                                    </ul>
+                                </div>
+                            </div> -->
+                            <div class="mobileheader-button">
+                                <a href="/login" class="btn mainbtn-primary login-btn">Login</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Header For Food Website Mobile Device Menu and Location Button Panel-->
+        <section class="mobile-header-section mobile-header-navsection header-mobile-device">
+            <div class="mobileheader-all-navcontent">
+                <div class="mobile-header-menu">
+                    <div class="container">
+                        <div class="mobile-header-option">
+                            <nav class="navbar navbar-expand-lg">
+                                <div class="">
+                                    <button class="navbar-toggler mobile-navbar-toggler" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                                            aria-expanded="false" aria-label="Toggle navigation">
+                                        <span class="navbar-toggler-icon"></span>
+                                    </button>
+                                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                        <ul class="navbar-nav mobileheader-navbar-nav m-auto mb-2 mb-lg-0">
+                                            <li class="nav-item">
+                                                <a class="nav-link mobileheader-navlink active" aria-current="page" href="/"><span><i class="fa-solid fa-angles-right"></i></span> Home</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link mobileheader-navlink" href="./ourmenu.html"><span><i class="fa-solid fa-angles-right"></i></span> Order Now</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link mobileheader-navlink" href="#"><span><i class="fa-solid fa-angles-right"></i></span> Download Menu</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link mobileheader-navlink" href="./contact_us.html"><span><i class="fa-solid fa-angles-right"></i></span> Contact Us</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </nav>
+                            <div class="mobileheader-arrow-button btn mobileheader-collapse-btn" id="btn-collapse" data-bs-toggle="collapse" href="#LocationCollapse" role="button" aria-expanded="false" aria-controls="collapseExample">
+                                    <p><span><i class="fa-solid fa-shop"></i></span> Dhaka</p>
+                                <div class="mobileheader-arrowbutton-hold">
+                                    <p>
+                                        <span id="headerDownArrowIcon"><i class="fa-solid fa-angle-down"></i></span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="collapse headerlocation-collapse" id="LocationCollapse">
+                    <div class="container">
+                        <div class="headerlocation-collapse-allcontent">
+                            <div class="headerlocation-collapse-title">
+                                <h4>Restaurant Food Dhaka</h4>
+                            </div>
+                            <div class="headerlocation-collapse-address">
+                                <p><span><a href="#" target="_blank">House #1, Block-A, Road-1, Malibagh, Dhaka</a></p>
+                            </div>
+                            <div class="headerlocation-collapse-address">
+                                <p><span><a href="#">info_restaurant@email.com</a></p>
+                            </div>
+                            <div class="headerlocation-collapse-address headerlocation-collapse-phone">
+                                <p><span><a href="#">+88 0123 456789</a></p>
+                            </div>
+                            <div class="headerlocation-collapse-openingtime">
+                                <h5><span><i class="fa-solid fa-clock"></i></span>Opening Times Today</h5>
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <div class="headerlocation-timing-title">
+                                        <h6>Opening Times</h6>
+                                    </div>
+                                    <div>
+                                        <p>09:30 - 19:00</p>
+                                    </div>
+                                </div>
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <div class="headerlocation-timing-title">
+                                        <h6>Tomorrow</h6>
+                                    </div>
+                                    <div>
+                                        <p>09:30 - 18:00</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="hlc-change-button">
+                                <a href="#" type="button" data-bs-toggle="modal" data-bs-target="#shopModal" class="ms-2 btn mainbtn-primary login-btn hlc-change-btn">Change Shop</a>    
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+
+    <!-- Checkout Page Section -->
+    <section class="checkout-section" id="checkoutAllContent">
+        <div class="container">
+            <div class="checkout-all-content" v-if="cart.length">
+                <div class="row checkout-large-device">
+                    <div class="col-md-12 m-auto">
+                        <div class="text-center header-branchname checkoutheader-branchname">
+                            <h5><span><i class="fa-solid fa-location-dot"></i></span>Shop: Dhaka
+                                <a href="#" data-bs-toggle="modal" data-bs-target="#shopModal" class="ms-2 btn mainbtn-primary login-btn mt-1 mb-1 btn-sm" style="font-size: 14px">Change Shop</a>
+                            </h5>
+                        </div>
+                    </div>
+                </div>
+
+                <form action="" id="formCheckout">
+                    <div class="row mobile-col-reverse">
+                        <div class="col-md-12 col-lg-8">
+                            <!-- Shipping Address -->
+                            <div class="shipping-content" id="shipping-content">
+
+                                <div class="shipping-title">
+                                    <h3>
+                                        <span><i class="fa-solid fa-house"></i></span> Checkout Information
+                                    </h3>
+                                </div>
+                                <div class="shipping-details">
+                                    <!-- Order Info -->
+                                    <div class="row row-alignment">
+                                        <div class="col-md-12">
+                                                <div class="mb-2">
+                                                    <b class="guest-title">Guest Checkout</b> or 
+                                                    <a href="" class="guest-loginlink"><u>I have an account</u></a>
+                                                </div>
+                                            <div class="checkouttitle">
+                                                <h1><span><i class="fa-solid fa-user"></i></span>Guest Checkout</h1>
+                                            </div>
+
+                                            <div class="customer-info">
+                                                <div class="shipping-item">
+                                                    <div class="row">
+                                                        <div class="col-md-6">
+                                                            <div class="col-alignment">
+                                                                <label for="payment_type" class="checkout-formlabel shipping-pd-label">
+                                                                    Payment Type
+                                                                </label>
+                                                                <select
+                                                                    class="form-select checkout-forminput checkout-selectOption"
+                                                                    aria-label="" name="payment_type"
+                                                                    required
+                                                                >
+                                                                    <option value="CASH">Cash</option>
+                                                                    <option value="CARD">Card</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <div class="col-alignment">
+                                                                <label for="" class="checkout-formlabel shipping-pd-label">
+                                                                    Order Type:
+                                                                </label>
+                                                                <select
+                                                                    class="form-select checkout-forminput checkout-selectOption"
+                                                                    aria-label=""
+                                                                    name="order_type"
+                                                                    required
+                                                                >
+                                                                    <option value="COLLECTION">Collection</option>
+                                                                    <option value="DELIVERY">Delivery</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="shipping-item">
+                                                    <div class="row">
+                                                        <div class="col-md-6">
+                                                            <div class="col-alignment">
+                                                                <label for=""
+                                                                       class="checkout-formlabel shipping-pd-label">Collection Hour</label>
+                                                                <select
+                                                                    class="form-select checkout-forminput checkout-selectOption"
+                                                                    aria-label="" name="requested_hour"
+                                                                    required
+                                                                >
+                                                                    <option value="ASAP">---ASAP---</option>
+                                                                    <option v-for="val in filtered_requested_hours" :value="val">
+                                                                        12 Hour
+                                                                    </option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <div class="col-alignment" v-if="requested_hour !== 'ASAP'">
+                                                                <label for=""
+                                                                       class="checkout-formlabel shipping-pd-label">Minutes</label>
+                                                                <select
+                                                                    class="form-select checkout-forminput checkout-selectOption"
+                                                                    aria-label="" name="requested_minute"
+                                                                    required
+                                                                >
+                                                                    <option value="40 Minute">
+                                                                        40 Minutes
+                                                                    </option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Delivery Address -->
+                                    <div class="row row-alignment" v-if="order_type === 'DELIVERY'">
+                                        <div class="col-md-12">
+                                            <div class="checkouttitle">
+                                                <h1><span><i class="fa-solid fa-user"></i></span> Delivery Address </h1>
+                                            </div>
+                                            <div class="customer-info">
+
+                                                <div class="shipping-item" v-show="user">
+                                                    <div class="row align-items-center">
+                                                        <div class="col-md-3">
+                                                            <label for="" class="checkout-formlabel"
+                                                            >Select address:</label
+                                                            >
+                                                        </div>
+                                                        <div class="col-md-6 col-lg-5">
+                                                            <select
+                                                                class="form-select checkout-forminput checkout-selectOption"
+                                                                aria-label="" name="shipping_address"
+                                                                required
+                                                            >
+                                                                <option value="NEW">New address</option>
+                                                                <option value="Motijheel">Motijheel, Dhaka</option>
+                                                                <option value="Malibagh">Malibagh, Dhaka</option>
+                                                                <option value="Gulshan">Gulshan, Dhaka</option>
+                                                                <option value="Banani">Banani, Dhaka</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div>
+                                                    <div class="row row-alignment">
+                                                        <div class="col-md-12">
+                                                            <div class="shipping-item">
+                                                                <div class="row align-items-center">
+                                                                    <div class="col-md-3">
+                                                                        <label for="" class="checkout-formlabel"
+                                                                        >Postcode:</label
+                                                                        >
+                                                                    </div>
+                                                                    <div class="col-12 col-md-4">
+                                                                        <input
+                                                                            type="text"
+                                                                            class="form-control checkout-forminput"
+                                                                            name="postcode"
+                                                                            required
+                                                                        />
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row row-alignment">
+                                                        <div class="col-md-12">
+                                                            <div class="shipping-item">
+                                                                <div class="row align-items-center">
+                                                                    <div class="col-md-3">
+                                                                        <label for="" class="checkout-formlabel"
+                                                                        >Choose Address:</label
+                                                                        >
+                                                                    </div>
+                                                                    <div class="col-md-9">
+                                                                        <select name="address" id="address"
+                                                                                v-model="address"
+                                                                                class="form-control checkout-forminput">
+                                                                            <option value="">None</option>
+                                                                            <option value="1">12, Road-3 Motijheel, Dhaka</option>
+                                                                            <option value="2">16, Road-1 Banani, Dhaka</option>
+                                                                            <option value="3">10, Road-2 Gulshan, Dhaka</option>
+                                                                        </select>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row row-alignment">
+                                                        <div class="col-md-12">
+                                                            <div class="shipping-item">
+                                                                <div class="row align-items-center">
+                                                                    <div class="col-md-3">
+                                                                        <label for="" class="checkout-formlabel"
+                                                                        >House:</label
+                                                                        >
+                                                                    </div>
+                                                                    <div class="col-md-9">
+                                                                        <input
+                                                                            type="text"
+                                                                            class="form-control checkout-forminput"
+                                                                            name="house"
+                                                                            required
+                                                                        />
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row row-alignment">
+                                                        <div class="col-md-12">
+                                                            <div class="shipping-item">
+                                                                <div class="row align-items-center">
+                                                                    <div class="col-md-3">
+                                                                        <label for="" class="checkout-formlabel"
+                                                                        >Street:</label
+                                                                        >
+                                                                    </div>
+                                                                    <div class="col-md-9">
+                                                                        <input
+                                                                            type="text"
+                                                                            class="form-control checkout-forminput"
+                                                                            name="street"
+                                                                            required
+                                                                        />
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row row-alignment">
+                                                        <div class="col-md-12">
+                                                            <div class="shipping-item">
+                                                                <div class="row align-items-center">
+                                                                    <div class="col-md-3">
+                                                                        <label for=""
+                                                                               class="checkout-formlabel">City:</label>
+                                                                    </div>
+                                                                    <div class="col-md-9">
+                                                                        <input
+                                                                            type="text"
+                                                                            class="form-control checkout-forminput"
+                                                                            name="city"
+                                                                            required
+                                                                        />
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <!-- This confirm address will be available when Order delivery charge will be calculated by DISTANCE -->
+                                                    <div class="row row-alignment">
+                                                        <div class="col-md-12">
+                                                            <div class="shipping-item">
+                                                                <div class="row align-items-center">
+                                                                    <div class="col-md-3"></div>
+                                                                    <div class="col-md-9">
+                                                                        <button type="button" class="btn checkout-btn">
+                                                                            <i class="fa fa-check"></i> Confirm Address
+                                                                        </button>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Customer info -->
+                                    <div class="row row-alignment">
+                                        <div class="col-md-12">
+                                            <div class="checkouttitle">
+                                                <h1><span><i class="fa-solid fa-user"></i></span> Customer info </h1>
+                                            </div>
+                                            <div class="customer-info">
+                                                <div class="shipping-item">
+                                                    <div class="row">
+                                                        <div class="col-md-6">
+                                                            <div class="col-alignment">
+                                                                <label for=""
+                                                                       class="checkout-formlabel shipping-pd-label">First
+                                                                    Name:</label>
+                                                                <input
+                                                                    type="text"
+                                                                    class="form-control checkout-forminput"
+                                                                    name="first_name"
+                                                                    required
+                                                                />
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <div class="col-alignment">
+                                                                <label for=""
+                                                                       class="checkout-formlabel shipping-pd-label">Last
+                                                                    Name:</label>
+                                                                <input
+                                                                    type="text"
+                                                                    class="form-control checkout-forminput"
+                                                                    name="last_name"
+                                                                    required
+                                                                />
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="shipping-item">
+                                                    <div class="row">
+                                                        <div class="col-md-6">
+                                                            <div class="col-alignment">
+                                                                <label for=""
+                                                                       class="checkout-formlabel shipping-pd-label">Phone:</label>
+                                                                <input
+                                                                    type="text"
+                                                                    class="form-control checkout-forminput"
+                                                                    name="phone"
+                                                                    required
+                                                                />
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <div class="">
+                                                                <label for=""
+                                                                       class="checkout-formlabel shipping-pd-label">Email:</label>
+                                                                <input
+                                                                    type="email"
+                                                                    class="form-control checkout-forminput"
+                                                                    name="email"
+                                                                    required
+                                                                />
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-md-7 col-lg-5 ms-auto checkoutBtn-alignment">
+                                            <div class="shipping-checkout-button">
+                                                <button type="submit"
+                                                        class="btn checkout-btn checkout-confirm-btn-large">
+                                                    <span class="checkoutbtn-icon1"><i
+                                                            class="fa-solid fa-lock"></i></span>
+                                                    Confirm
+                                                    <span class="checkoutbtn-icon2"><i
+                                                            class="fa-solid fa-angle-right"></i></span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-md-12 col-lg-4">
+
+                            <div class="orderitemsummary-detailshold">
+
+                                <div class="ordersummary-headtitle">
+                                    <h6>Cart</h6>
+                                    <div><a href="#">Edit Cart</a></div>
+                                </div>
+                                <div class="checkout-cart-item">
+                                    <div class="cart-busket-item">
+                                        <div class="row">
+                                            <div class="col-12 col-md-12">
+                                                <div class="cb-item-name">
+                                                    <h6>Grill Items 1</h6>
+                                                    <div>
+                                                        <p>
+                                                            <small>- Pepsi</small>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-md-12">
+                                                <div class="cb-productitem-comment">
+                                                    <input type="text" class="form-control cb-control-form"
+                                                           placeholder="Enter comment(if any)">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12">
+                                                <div class="cb-product-action">
+                                                    <div class="cb-product-price">
+                                                        Price: $ 3.30
+                                                    </div>
+                                                    <div class="cb-p-action">
+                                                        <a><span><i class="fa-solid fa-trash"></i></span></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="cart-busket-item">
+                                        <div class="row">
+                                            <div class="col-12 col-md-12">
+                                                <div class="cb-item-name">
+                                                    <h6>Burger 2</h6>
+                                                    <div>
+                                                        <p>
+                                                            <small>- Potato Fries</small>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-md-12">
+                                                <div class="cb-productitem-comment">
+                                                    <input type="text" class="form-control cb-control-form"
+                                                           placeholder="Enter comment(if any)">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12">
+                                                <div class="cb-product-action">
+                                                    <div class="cb-product-price">
+                                                        Price: $ 3.30
+                                                    </div>
+                                                    <div class="cb-p-action">
+                                                        <a><span><i class="fa-solid fa-trash"></i></span></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="cart-busket-item">
+                                        <div class="row">
+                                            <div class="col-12 col-md-12">
+                                                <div class="cb-item-name">
+                                                    <h6>Rice Item 3</h6>
+                                                    <div>
+                                                        <p>
+                                                            <small>- Chicken</small>
+                                                            <br>
+                                                            <small>- Pepsi</small>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-md-12">
+                                                <div class="cb-productitem-comment">
+                                                    <input type="text" class="form-control cb-control-form"
+                                                           placeholder="Enter comment(if any)">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12">
+                                                <div class="cb-product-action">
+                                                    <div class="cb-product-price">
+                                                        Price: $ 3.30
+                                                    </div>
+                                                    <div class="cb-p-action">
+                                                        <a><span><i class="fa-solid fa-trash"></i></span></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="cart-busket-checkoutitem">
+                                        <div class="row">
+                                            <div class="col-12 col-md-12">
+                                                <div class="busket-product-commentbox">
+                                                    <label><span><i class="fa-solid fa-comment"></i></span> Comment</label>
+                                                    <textarea name="" id="" cols="30" rows="3"
+                                                              class="form-control comment-textarea-formcontrol"
+                                                              placeholder="Write your comment here (if any)"></textarea>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="checkoutorder-summary">
+                                <div class="ordersummary-headtitle add-coupon-header">
+                                    <h6>Add Code</h6>
+                                </div>
+                                <div class="ordersummary-details">
+                                    <div class="chkoutordersummary-content add-coupon-body">
+                                        <div class="input-group">
+                                            <input type="text" class="form-control coupon-input"
+                                                   placeholder="Enter coupon code"
+                                                   aria-describedby="button-addon2">
+                                            <button class="btn couponbtn" type="button">Apply</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="checkoutorder-summary checkoutorder-summary-details">
+                                <div class="ordersummary-details">
+                                    <div class="chkoutordersummary-content">
+                                        <div class="ordersummary-title">
+                                            <h6>Subtotal</h6>
+                                        </div>
+                                        <div class="ordersummary-price">
+                                            <p>$ 3.30</p>
+                                        </div>
+                                    </div>
+                                    <div class="chkoutordersummary-content">
+                                        <div class="ordersummary-title">
+                                            <h6>Delivery Charge</h6>
+                                        </div>
+                                        <div class="ordersummary-price">
+                                            <p>$ 0.00</p>
+                                        </div>
+                                    </div>
+                                    <div class="chkoutordersummary-content">
+                                        <div class="ordersummary-title">
+                                            <h6>Discount</h6>
+                                            <small>
+                                                $ 0.00
+                                            </small>
+                                        </div>
+                                        <div class="ordersummary-price">
+                                            <p>$ 0.00</p>
+                                        </div>
+                                    </div>
+                                    <div class="chkoutordersummary-content chkoutordersummary-totalcontent">
+                                        <div class="ordersummary-title ordersummary-total">
+                                            <h6>Total</h6>
+                                        </div>
+                                        <div class="ordersummary-price ordersummary-totalprice">
+                                            <p>$ 3.30</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row proceed-button-mobile">
+                        <div class="col-12">
+                            <div class="proceed-button">
+                                <div class="process-button-hold">
+                                    <div class="row align-items-center">
+                                        <div class="col-6">
+                                            <a href="./ourmenu.html" class="btn backreturn-btn"><span><i
+                                                class="fa-solid fa-arrow-left"></i></span> Return Menu</a>
+                                        </div>
+                                        <div class="col-6">
+                                            <button type="submit" class="btn checkoutprocess-btn"><span><i
+                                                        class="fa-solid fa-dolly"></i></span> $ 3.30 <span class="checkoutprocess-arrow"><i class="fa-solid fa-arrow-right"></i></span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="mobile-separator"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>  
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <section class="all-footer-section">
+        <!-- Footer Upper section -->
+        <section class="footer-section" id="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-5">
+                        <div class="footer-logo">
+                            <img src="../images/self-logo.png" alt="">
+                        </div>
+                        <div class="footer-details">
+                            <div class="footer-opening-time">
+                                <h5>Opening Times</h5>
+                                <p>Everyday : <span>10:00AM - 11:00PM</span></p>
+                            </div>
+                            <div class="footer-all-contactifo footer-large-device">
+                                <div class="footer-contact-info">
+                                    <div class="contact-icon">
+                                        <span><i class="fa-solid fa-phone"></i></span>
+                                    </div>
+                                    <div class="contact-details">
+                                        <a href="#">+880 1234 567890</a>
+                                    </div>
+                                </div>
+                                <div class="footer-contact-info">
+                                    <div class="contact-icon">
+                                        <span><i class="fa-solid fa-envelope"></i></span>
+                                    </div>
+                                    <div class="contact-details">
+                                        <a href="#">info_restaurant@email.com</a>
+                                    </div>
+                                </div>
+                                <div class="footer-contact-info">
+                                    <div class="contact-icon">
+                                        <span><i class="fa-solid fa-location-dot"></i></span>
+                                    </div>
+                                    <div class="contact-details">
+                                        <a href="#" target="_blank">House #1, Block - A, Road #1, Malibagh, Dhaka.</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="footer-contactifo-accordion footer-mobile-device">
+                                <div class="accordion" id="footerContactInfo">
+                                    <div class="accordion-item footer-accordion-item">
+                                        <h2 class="accordion-header">
+                                            <button class="accordion-button footer-accordion-button collapsed" type="button"
+                                                    data-bs-toggle="collapse" data-bs-target="#footerContactLink"
+                                                    aria-expanded="true" aria-controls="footerContactLink">
+                                                Our Contact Information
+                                            </button>
+                                        </h2>
+                                        <div id="footerContactLink" class="accordion-collapse collapse"
+                                             data-bs-parent="#footerContactInfo">
+                                            <div class="accordion-body footer-accordion-body">
+                                                <div>
+                                                    <div class="footer-contact-info">
+                                                        <div class="contact-icon">
+                                                            <span><i class="fa-solid fa-phone"></i></span>
+                                                        </div>
+                                                        <div class="contact-details mobile-contact-details">
+                                                            <a href="#">+880 1234 567890</a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="footer-contact-info">
+                                                        <div class="contact-icon">
+                                                            <span><i class="fa-solid fa-envelope"></i></span>
+                                                        </div>
+                                                        <div class="contact-details mobile-contact-details">
+                                                            <a href="#">info_restaurant@email.com</a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="footer-contact-info">
+                                                        <div class="contact-icon">
+                                                            <span><i class="fa-solid fa-location-dot"></i></span>
+                                                        </div>
+                                                        <div class="contact-details mobile-contact-details">
+                                                            <a href="#" target="_blank">House #1, Block - A, Road #1, Malibagh, Dhaka.</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="footer-large-device">
+                            <div class="footer-links-title">
+                                <h3>Useful Links</h3>
+                            </div>
+                            <div class="footer-useful-link">
+                                <ul>
+                                    <li>
+                                        <div class="footer-link-icon">
+                                            <span><i class="fa-solid fa-caret-right"></i></span>
+                                        </div>
+                                        <div class="footer-link-content">
+                                            <a href="./about_us.html">About Us</a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="footer-link-icon">
+                                            <span><i class="fa-solid fa-caret-right"></i></span>
+                                        </div>
+                                        <div class="footer-link-content">
+                                            <a href="./contact_us.html">Contact Us</a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="footer-link-icon">
+                                            <span><i class="fa-solid fa-caret-right"></i></span>
+                                        </div>
+                                        <div class="footer-link-content">
+                                            <a href="#">Download Menu</a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="footer-link-icon">
+                                            <span><i class="fa-solid fa-caret-right"></i></span>
+                                        </div>
+                                        <div class="footer-link-content">
+                                            <a href="./ourmenu.html">Order Now</a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="footer-mobile-device mt-3">
+                            <div class="accordion" id="accordionUsefulLink">
+                                <div class="accordion-item footer-accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button footer-accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#usefulLinks" aria-expanded="true"
+                                                aria-controls="usefulLinks">
+                                            Useful Links
+                                        </button>
+                                    </h2>
+                                    <div id="usefulLinks" class="accordion-collapse collapse"
+                                         data-bs-parent="#accordionUsefulLink">
+                                        <div class="accordion-body footer-accordion-body">
+                                            <div class="footer-useful-link mobilefooter-useful-link">
+                                                <ul>
+                                                    <li>
+                                                        <div class="footer-link-icon mobilefooter-link-icon">
+                                                            <span><i class="fa-solid fa-caret-right"></i></span>
+                                                        </div>
+                                                        <div class="footer-link-content mobilefooter-link-content">
+                                                            <a href="./about_us.html">About Us</a>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="footer-link-icon mobilefooter-link-icon">
+                                                            <span><i class="fa-solid fa-caret-right"></i></span>
+                                                        </div>
+                                                        <div class="footer-link-content mobilefooter-link-content">
+                                                            <a href="./contact_us.html">Contact Us</a>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="footer-link-icon mobilefooter-link-icon">
+                                                            <span><i class="fa-solid fa-caret-right"></i></span>
+                                                        </div>
+                                                        <div class="footer-link-content mobilefooter-link-content">
+                                                            <a href="">Download Menu</a>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="footer-link-icon mobilefooter-link-icon">
+                                                            <span><i class="fa-solid fa-caret-right"></i></span>
+                                                        </div>
+                                                        <div class="footer-link-content mobilefooter-link-content">
+                                                            <a href="./ourmenu.html">Order Now</a>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="footer-links-title">
+                                <h3>Follow Us</h3>
+                            </div>
+                            <div class="footer-social-link">
+                                <ul>
+                                    <li>
+                                        <a href="#"><span><i class="fa-brands fa-facebook-f"></i></span></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><span><i class="fa-brands fa-twitter"></i></span></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><span><i class="fa-brands fa-linkedin-in"></i></span></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><span><i class="fa-brands fa-instagram"></i></span></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="footer-contactform">
+                            <div class="subscribe-title">
+                                <p>Subscribe to Our Newsletter</p>
+                            </div>
+                            <form>
+                                <div class="mb-3">
+                                    <input type="email" class="form-control footer-formcontrol" placeholder="Email Address" required>
+                                </div>
+                                <button type="submit" class="btn footer-formbtn">Subscribe</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-learnmore-links">
+                    <div class="footer-large-device">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="row">
+                                    <div class="col-md-12 m-auto">
+                                        <div class="separator"></div>
+                                    </div>
+                                </div>
+                                <div class="row align-items-center">
+                                    <div class="col-md-10 col-lg-7 m-auto">
+                                        <div class="learn-more-link">
+                                            <ul>
+                                                <li><a href="#">Terms & Conditions</a></li>
+                                                <li><a href="#">FAQs</a></li>
+                                                <li><a href="#">Privacy Policy</a></li>
+                                                <li><a href="#">Refund Policy</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12 m-auto">
+                                        <div class="separator"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer-mobile-device">
+                        <div class="row">
+                            <div class="col-12">
+                                <h6 class="footerlearn-more-title">Lean More</h6>
+                            </div>
+                            <div class="col-6 m-auto">
+                                <div class="footermobile-learnmore-links">
+                                    <a href="#" class="btn fm-lm-linkbtn">Terms & Conditions</a>
+                                </div>
+                            </div>
+                            <div class="col-6 m-auto">
+                                <div class="footermobile-learnmore-links">
+                                    <a href="#" class="btn fm-lm-linkbtn">FAQs</a>
+                                </div>
+                            </div>
+                            <div class="col-6 m-auto">
+                                <div class="footermobile-learnmore-links">
+                                    <a href="#" class="btn fm-lm-linkbtn">Privacy Policy</a>
+                                </div>
+                            </div>
+                            <div class="col-6 m-auto">
+                                <div class="footermobile-learnmore-links">
+                                    <a href="#" class="btn fm-lm-linkbtn">Refund Policy</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Footer Bottom Section -->
+        <section class="footer-bottom-section">
+            <div class="container">
+                <div class="row align-items-center mobile-footerbottom-row">
+                    <div class="col-md-5 col-lg-5">
+                        <div class="footer-copyright">
+                            <p><span><i class="fa-regular fa-copyright"></i></span>Copyright <a href="https://abukaiser.com/" target="_blank">Abu Kaiser</a>. All right Reserved 2023.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-7 col-lg-7">
+                        <div class="payment-option">
+                            <div class="payment">
+                                <div class="payment-with d-flex align-items-center">
+                                    <span><i class="fa-solid fa-lock"></i></span>
+                                    <p>Pay Securely with</p>
+                                </div>
+                            </div>
+                            <div class="payment-method">
+                                <div class="payment">
+                                    <div class="payment-method-logo">
+                                        <img src="../images/payment-logo/visa.jpg" alt=""/>
+                                    </div>
+                                </div>
+                                <div class="payment">
+                                    <div class="payment-method-logo">
+                                        <img src="../images/payment-logo/mastercard.jpg" alt=""/>
+                                    </div>
+                                </div>
+                                <div class="payment">
+                                    <div class="payment-method-logo">
+                                        <img src="../images/payment-logo/Amex.jpg" alt=""/>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+
+    <!-- Location Modal -->
+    <div class="modal fade" id="shopModal" tabindex="-1" aria-labelledby="shopModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header location-modal-header">
+                    <h1 class="modal-title location-modal-title" id="locationModalLabel">Our Restaurant</h1>
+                </div>
+                <form>
+                    <div class="modal-body location-modal-body">
+                        <div class="location-body-content">
+                            <div class="row">
+                                <div class="col-12 col-md-7 m-auto">
+                                    <div class="location-modal-image">
+                                        <img src="../images/about.jpg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row align-items-center mt-3">
+                                    <div class="col-12 col-md-5">
+                                            <label for="payment_type" class="location-formlabel"><span><i class="fa-solid fa-location-dot"></i></span>OrderLocation</label>
+                                    </div>
+                                <div class="col-12 col-md-7 m-auto">
+                                    <div class="col-alignment">
+                                        <select name="branch" id="branch" class="form-control location-form-select">
+                                            <option value="">Select Shop</option>
+                                            <option value="1">Dhaka</option>
+                                            <option value="2">Khulna</option>
+                                            <option value="3">Cox's Bazar</option>
+                                        </select>
+        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer location-modal-footer">
+                        <button type="button" class="btn btn-secondary location-modal-close" data-bs-dismiss="modal">Back</button>
+                        <button type="submit" class="btn mainbtn-primary location-modal-close">Change</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Javascript Links -->
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js"></script>
+    <script src="../js/owl.carousel.min.js"></script>
+    <script src="../js/slick.min.js"></script>
+    <!-- Header JS -->
+    <script src="../js/header.js"></script>
+    <!-- Menu JS -->
+    <script src="../js/menu.js"></script>
+</body>
+</html>

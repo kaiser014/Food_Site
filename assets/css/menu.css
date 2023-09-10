@@ -580,8 +580,42 @@
 .mobile-checkout-button a {
     text-align: center;
     color: #fff;
-    font-size: 17px;
+    font-size: 15px;
     display: block;
+}
+.mobile-basket-button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.mobilebasket-icon{
+    position: relative;
+}
+.mobilebasket-icon span{
+    display: block;
+    color: #fff;
+    font-size: 20px;
+}
+.mobilebasket-icon p{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: #181818;
+    border-radius: 100%;
+    top: -6px;
+    color: #fff;
+    font-size: 13px;
+    right: -12px;
+}
+.mobilebasket-content{
+    text-align: start;
+    padding: 0;
+    padding-left: 18px;
+}
+.mobilebasket-content p{
+    line-height: 1.2;
+    color: #fff;
+    font-size: 15px;
 }
 .mobile-cart-checkout-hold {
     position: relative;
@@ -601,7 +635,6 @@
 .cat-menu-item {
     color: #fff;
     font-size: 15px;
-    margin-right: 8px;
 }
 .form-extraitem-check {
     width: 20px;
@@ -976,7 +1009,7 @@
     }
     .busket-product-commentbox {
         padding: 12px 16px;
-        padding-top: 0px;
+        padding-top: 16px;
     }
     .category-accordion-header span {
         padding: 12px 20px;
@@ -1015,9 +1048,28 @@
     .foodsubitem-modal-header .modal-title{
         font-size: 20px;
     }
+    .menu-large-device{
+        display: none;
+    }
 }
 @media only screen and (min-width: 600px) {
     .mobile-menu-list-item {
         margin-bottom: 10px;
+    }
+    .menu-large-device{
+        display: none;
+    }
+}
+@media only screen and (min-width: 768px) {
+    .menu-large-device{
+        display: none;
+    }
+}
+@media only screen and (min-width: 992px) {
+    .menu-mobile-device{
+        display: none;
+    }
+    .menu-large-device{
+        display: revert;
     }
 }

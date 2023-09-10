@@ -6,7 +6,7 @@ var scrollSpy = new bootstrap.ScrollSpy(document.body, {
 $(window).scroll(function (e) {
     var $el = $('.mobile-menu-list-item');
     var isPositionFixed = ($el.css('position') == 'fixed');
-    if ($(this).scrollTop() > 150 && !isPositionFixed) {
+    if ($(this).scrollTop() > 80 && !isPositionFixed) {
         $el.css({
             'position': 'fixed',
             'top': '51px',
@@ -15,11 +15,11 @@ $(window).scroll(function (e) {
             'border-top': '2px solid #fff'
         });
     }
-    if ($(this).scrollTop() < 150 && isPositionFixed) {
+    if ($(this).scrollTop() < 80 && isPositionFixed) {
         $el.css({
             'position': 'static',
             'top': '0px',
-            'margin-bottom': '0px',
+            'margin-bottom': '10px',
             'border-radius': '5px'
         });
     }
@@ -47,12 +47,12 @@ $(".mobile-menu-list-item").on('click', 'a', function (event) {
 });
 
 // Gap on top of basket
-$(".mobile-basket-button").on('click', 'a', function (event) {
+$(".mobile-basket-buttonhold").on('click', 'a', function (event) {
     event.preventDefault();
     var screen_width = screen.width;
-    var gap = $(".mobile-header-menu").outerHeight(true);
+    var gap = $(".mobile-header-navsection").outerHeight(true);
     if (screen_width > 767) {
-        gap = 21;
+        gap = 100;
     } else {
         gap = 100;
     }
