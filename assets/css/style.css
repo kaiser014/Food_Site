@@ -41,68 +41,33 @@ ul {
     background-color: #ff9900;
     color: #fff;
 }
-.floating-button {
-    /* display: none; */
-    background-color: #fff;
-    height: 62px;
-    width: 190px;
-    text-align: end;
-    overflow: hidden;
+.floating-ordernow-button{
     position: fixed;
-    border-radius: 10px 0px 0px 10px;
-    top: 45%;
-    z-index: 5;
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    bottom: 30px;
+    right: 30px;
+    background-color: #ff9900;
+    border: 2px solid #fff;
+    z-index: 100;
+    width: 70px;
+    height: 70px;
+    border-radius: 100%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
-.floating-buttonVisible {
-    right: 0px;
-    transition: 0.5s all ease-in-out;
-}
-.floating-buttonHidden {
-    right: -155px;
-    transition: 0.5s all ease-in-out;
-}
-.floating-btn-hold {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.floating-ordernowbtn-hold{
+    position: relative;
     width: 100%;
     height: 100%;
 }
-.floatingbtn-arrow {
-    background-color: #ff9900;
-    width: 20%;
-    display: block;
-    height: 100%;
-    position: relative;
-    overflow: hidden;
-    cursor: pointer;
-}
-.floatingbtn-arrow a {
-    display: block;
-}
-.floatingbtn-arrow svg {
+.floating-ordernowbtn-hold a{
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 18px;
     color: #fff;
-}
-.floating-order-btn {
-    width: 80%;
-    height: 100%;
-    position: relative;
-    border: 1px solid #c5c5c5;
-    border-right: 0px;
-    border-left: 0px;
-}
-.floating-orderbtn {
-    width: 120px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    font-size: 15px;
+    line-height: 1.1;
+    text-align: center;
+    font-weight: 600;
 }
 /* Top Header Section CSS Start */
 .top-header-section {
